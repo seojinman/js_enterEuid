@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배추마켓</title>
+    <link
+      rel="stylesheet preload"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <link rel="stylesheet" href="/style/index.css" />
+  </head>
+
+  <body>
+    <h1 class="a11yHidden">배추마켓</h1>
+
+    <header>
+      <h2 class="a11yHidden">기본 정보</h2>
+      <div class="timeWrapper">
+        <time class="timeInfo" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="cellInfo">
+          <li class="cellItem">
+            <span class="sprite spriteSensitivity"></span>
+            <span class="a11yHidden">수신감도</span>
+          </li>
+          <li class="cellItem">
+            <span class="sprite spriteLte"></span>
+            <span class="a11yHidden">데이터 종류</span>
+          </li>
+          <li class="cellItem">
+            <span class="sprite spriteBattery"></span>
+            <span class="a11yHidden">배터리 잔량</span>
+          </li>
+        </ul>
+      </div>
+      <div class="statusBar">
+        <div class="selectLocation">
+          <label for="headerSelect">남가좌제2동 ▼</label
+          ><select id="headerSelect">
+            <option value="남가좌제1동">남가좌제1동</option>
+            <option value="남가좌제2동" selected>남가좌제2동</option>
+            <option value="북가좌제1동">북가좌제1동</option>
+            <option value="북가좌제2동">북가좌제2동</option>
+            <option value="연희동">연희동</option>
+            <option value="신촌동">신촌동</option>
+          </select>
+        </div>
+        <ul class="headerList">
+          <li class="headerItem">
+            <a
+              class="sprite spriteSearch"
+              href="/"
+              aria-label="검색"
+              tabindex="0"
+            ></a>
+          </li>
+          <li class="headerItem">
+            <a
+              class="sprite spriteMenu"
+              href="/"
+              aria-label="메뉴"
+              tabindex="0"
+            ></a>
+          </li>
+          <li class="headerItem">
+            <a
+              class="sprite spriteAlarm"
+              href="/"
+              aria-label="알림"
+              tabindex="0"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <nav class="commonNav">
+      <h2 class="a11yHidden">메뉴</h2>
+      <ul class="commonList">
+        <li class="">
+          <a href="./main.html" class="commonLink">
+            <span class="sprite spriteFillHome"></span>
+            <span>홈</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="../board/board.html" class="commonLink">
+            <span class="sprite spriteBoard"></span>
+            <span>게시판</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="./exchange.html" class="commonLink">
+            <span class="sprite spritePlace"></span>
+            <span>내 근처</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="../qna/chatlists.html" class="commonLink">
+            <span class="sprite spriteChat"></span>
+            <span>채팅</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="../profile/profile.html" class="commonLink">
+            <span class="sprite spriteMyPage"></span>
+            <span>나의 이름</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2 class="a11yHidden">메인 메뉴</h2>
+
+      <section class="swiperWrapper">
+        <h3 class="a11yHidden">개발자 이야기</h3>
+        <p class="swiperText">풀리지 않는 버그 속 개발자로 살아남기</p>
+        <img class="swiperImg" src="/images/mainPage_ad.png" alt="" />
+        <a href="/" class="swiperLink">자세히 보기</a>
+        <div class="swiperNumber">
+          <span class="swiperNo1">01</span>
+          <img
+            src="/images/bar.png"
+            alt=""
+            class="swiperLine"
+            aria-hidden="true"
+          />
+          <span class="swiperNo3">03</span>
+        </div>
+      </section>
+
+      <nav>
+        <h3 class="a11yHidden">메인페이지 네비게이션</h3>
+        <ul class="mainNav">
+          <li class="mainList">
+            <a href="./main.html" class="mainLink accentColor">선배님 스토리</a>
+          </li>
+          <li class="mainList">
+            <a href="./exchange.html" class="mainLink">기기 거래</a>
+          </li>
+          <li class="mainList">
+            <a href="/" class="mainLink">질의 응답</a>
+          </li>
+          <li class="mainList">
+            <a href="/" class="mainLink">함께 해요</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="storyField">
+        <h2 class="a11yHidden">선배님 스토리</h2>
+        <ul class="storyList">
+          <li class="storyItem">
+            <a href="/" class="">
+              <img
+                class="storyImg"
+                src="/images/imggray_bg.png"
+                alt="프로필사진"
+              />
+              <p class="storyTitle">
+                디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
+              </p>
+              <p class="storyUser">
+                UIUX <span aria-hidden="true">&#124;</span> 1기 수강생 박치열
+              </p>
+            </a>
+          </li>
+          <li class="storyItem">
+            <a href="/" class="">
+              <img
+                class="storyImg"
+                src="/images/imggray_bg.png"
+                alt="프로필사진"
+              />
+              <p class="storyTitle">
+                영문과 전공생에서 UIUX 디자이너로 취업하기까지
+              </p>
+              <p class="storyUser">
+                UIUX <span aria-hidden="true">&#124;</span> 3기 수강생 김진우
+              </p>
+            </a>
+          </li>
+          <li class="storyItem">
+            <a href="/" class="">
+              <img
+                class="storyImg"
+                src="/images/imggray_bg.png"
+                alt="프로필사진"
+              />
+              <p class="storyTitle">7기 수강생의 삼성으로 가는 피그마 노하우</p>
+              <p class="storyUser">
+                UIUX <span aria-hidden="true">&#124;</span> 7기 수강생 김삼성
+              </p>
+            </a>
+          </li>
+          <li class="storyItem">
+            <a href="/" class="storyTitle">
+              <img
+                class="storyImg"
+                src="/images/imggray_bg.png"
+                alt="프로필사진"
+              />
+              <p class="storyTitle">
+                배울 때 내가 가장 힘들었던 A-Z 야, 너도 할 수 있어!
+              </p>
+              <p class="storyUser">
+                UIUX <span aria-hidden="true">&#124;</span> 4기 수강생 김환휘
+              </p>
+            </a>
+          </li>
+          <li class="storyItem">
+            <a href="/" class="">
+              <img
+                class="storyImg"
+                src="/images/imggray_bg.png"
+                alt="프로필사진"
+              />
+              <p class="storyTitle">
+                나는 프론트일까? 백일까? 여전히 모르겠다면 물어봐!
+              </p>
+              <p class="storyUser">
+                UIUX <span aria-hidden="true">&#124;</span> 2기 수강생 최혜수
+              </p>
+            </a>
+          </li>
+          <li class="storyItem">
+            <a href="/" class="">
+              <img
+                class="storyImg"
+                src="/images/imggray_bg.png"
+                alt="프로필사진"
+              />
+              <p class="storyTitle">
+                코딩과 디자인의 그 어딘가 두가지 모두 하고 싶은 욕심쟁이
+              </p>
+              <p class="storyUser">
+                UIUX <span aria-hidden="true">&#124;</span> 5기 수강생 염진희
+              </p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
