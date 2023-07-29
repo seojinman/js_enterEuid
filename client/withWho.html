@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+      type="image/xml+svg"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js" type="module"></script>
+    <title>project</title>
+  </head>
+
+  <body>
+    <div class="backBar">
+      <img src="/" alt="뒤로가기" tabindex="0" />
+    </div>
+    <main class="withTitle">
+      <h2>어떤 학생과 함께 할까요?</h2>
+      <ul>
+        <li>
+          <div><img src="./../images/withWho/sex.png" alt="성별" />성별</div>
+          <div>누구나</div>
+        </li>
+
+        <li class="withSelect">
+          <p class="withDescription">누구나 또는 같은 성별 모임으로 설정해주세요.</p>
+          <button class="withAnybody">누구나</button>
+          <button class="withFemale">여자만</button>
+          <button class="withMale">남자만</button>
+        </li>
+
+        <li>
+          <div><img src="./../images/withWho/people.png" alt="나이" />나이</div>
+          <div tabindex="0">누구나</div>
+        </li>
+        <li>
+          <div><img src="./../images/withWho/password.png" alt="가입조건" />승인 후 참여</div>
+          <div><img src="./../images/board/toggle.png" alt="켜기,끄기" tabindex="0" /></div>
+        </li>
+      </ul>
+
+      <button class="nextButton" onclick="location.href='/'">일정만들기</button>
+    </main>
+  </body>
+</html>
