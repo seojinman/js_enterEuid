@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+      type="image/xml+svg"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js" type="module"></script>
+    <title>Q&A 게시물 페이지</title>
+  </head>
+
+  <body>
+  <h1 class="a11yHidden">QNA 게시물 페이지</h1>
+  
+  <div class="sizingWrapper">
+  
+    <!-- 메인/qna 뒤로가기 홈 공유 더보기-->
+    <header class="mainHeader backHeaderButton">
+      <h2 class="a11yHidden">기본 정보</h2>
+      <div class="timeInfo">
+        <time class="timeInfoDate" datetime="2023-08-02T02:26">2:26</time>
+        <ul class="celluarInfo">
+          <li class="celluarInfoItem">
+            <span class="sprite spriteReceptionSensitivity"></span>
+            <p class="a11yHidden">수신감도</p>
+          </li>
+          <li class="celluarInfoItem">
+            <span class="sprite spriteLte"></span>
+            <p class="a11yHidden">데이터 종류</p>
+          </li>
+          <li class="celluarInfoItem">
+            <span class="sprite spriteBattery"></span>
+            <p class="a11yHidden">배터리 잔량</p>
+          </li>
+        </ul>
+      </div>
+  
+      <ul class="statusBar">
+        <li class="statusItem">
+          <a href="/" class="statusLink backHeaderBackicon sprite spriteBack"><span
+              class="a11yHidden">뒤로가기</span></a>
+        </li>
+        <li class="statusItem backHeaderHome">
+          <a href="/" class="statusLink  sprite spriteHome"><span class="a11yHidden">홈</span></a>
+        </li>
+        <li class="statusItem">
+          <a href="/" class="statusLink backHeaderShare sprite spriteShare"><span class="a11yHidden">공유</span></a>
+        </li>
+        <li class="statusItem">
+          <a href="/" class="statusLink backHeaderMore sprite spriteMore"><span class="a11yHidden">더보기</span></a>
+        </li>
+      </ul>
+    </header>
+  
+    <main>
+      <div class="qnaBoardTopBox">
+        <span class="qnaBoardLabel">Q&A</span>
+        <!-- 프로필 -->
+        <div class="qnaBoardProfileBox">
+          <img class="qnaBoardProfileImg" src="/images/Rectangle.png" alt="프로필 이미지" />
+          <div class="qnaBoardProfileGroup">
+            <p class="qnaBoardProfileName">라옹</p>
+            <p class="qnaBoardProfileDetail">연희동 인증 26회 &#183;
+              <time datetime="2023-06-26T11:39">2시간 전</time>
+          </div>
+          </p>
+        </div>
+  
+        <!-- 게시글 레이아웃 -->
+        <dl class="qnaBoardPostContent">
+          <dt class="qnaBoardPostTitle"><span class="qIcon">Q.</span> 혹시 홍대나 연희동 주변에 프론트 스터디 하는 분</dt>
+          <dd class="qnaBoardPostDetail">계신가요? 있으면 참가하고 싶어서요!</dd>
+          <dd class="qnaBoardPostImg"><img src="/assets/bacon/contentImage.png" alt="게시글 이미지" /></dd>
+        </dl>
+      </div>
+  
+      <!-- 댓글 작성 폼 -->
+      <form name="writeCommentForm" action="/" method="POST" class="qnaBoardCommentForm">
+        <fieldset>
+          <legend>댓글 작성 폼</legend>
+  
+          <ul class="qnaBoardBarList">
+            <li class="sprite spritePicture">
+              <a href="/" class="a11yHidden">사진</a>
+            </li>
+            <li class="sprite spritePlace">
+              <a href="/" class="a11yHidden">장소</a>
+            </li>
+            <li class="qnaBoardBarInput">
+              <label for="commentInput" class="a11yHidden">댓글</label>
+              <input type="text" id="commentInput" name="commentInput" required class="commentInputBar"
+                placeholder="댓글을 입력해주세요." />
+              <span class="sprite spriteEmoticon"></span>
+            </li>
+          </ul>
+  
+        </fieldset>
+      </form>
+  
+      <aside class="qnaBoardBottomBox">
+        
+        <!-- 초록색 박스 이미지로 대체? -->
+        <div class="qnaBoardAdv__box">
+          <a href="/" class="qnaBoardAdv__link">
+            <span class="sprite spriteFlag">
+              <p class="qnaBoardAdvText__main">5개의 친구질문 글에 댓글 남기기</p>
+            </span>
+            <span class="qnaBoardAdvText__sub">미션 완료 시 '우수답변가' 배지를 받아요</span>
+  
+            <div class="percentBar">
+              <img class="firstBar" src="/images/fillBar.png" alt="" />
+              <img class="greyBar" src="/images/wholeblue.png" alt="" />
+              <img class="greyBar" src="/images/wholeblue.png" alt="" />
+              <img class="greyBar" src="/images/wholeblue.png" alt="" />
+              <img class="greyBar" src="/images/wholeblue.png" alt="" />
+            </div>
+          </a>
+          <div class="medalBox">
+            <img class="medalImage" src="/images/medal.png" alt="우수답변가 배지 이미지" />
+          </div>
+        </div>
+      </aside>
+  
+      <div class="qnaBoardEmpty">
+        <p class="qnaBoardEmpty__text">아직 댓글이 없어요.</p>
+        <p class="qnaBoardEmpty__text">가장 먼저 댓글을 남겨보세요.</p>
+      </div>
+  
+    </main>
+  </div>
+  </body>
+</html>
