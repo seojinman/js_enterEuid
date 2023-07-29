@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" type="image/xml+svg" />
+  <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="./js/main.js" type="module"></script>
+  <title>Q&A 게시글 작성 페이지</title>
+</head>
+<body>
+  <h1 class="a11yHidden">QNA 게시글 작성페이지</h1>
+
+  <div class="sizingWrapper">
+    <!-- Q&A cancle + p + done -->
+    <header class="mainHeader backHeaderButton">
+      <h2 class="a11yHidden">기본 정보</h2>
+      <div class="timeInfo">
+        <time class="timeInfoDate" datetime="2023-08-02T02:26">2:26</time>
+        <ul class="celluarInfo">
+          <li class="celluarInfoItem">
+            <span class="sprite spriteReceptionSensitivity"></span>
+            <p class="a11yHidden">수신감도</p>
+          </li>
+          <li class="celluarInfoItem">
+            <span class="sprite spriteLte"></span>
+            <p class="a11yHidden">데이터 종류</p>
+          </li>
+          <li class="celluarInfoItem">
+            <span class="sprite spriteBattery"></span>
+            <p class="a11yHidden">배터리 잔량</p>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="statusBar">
+        <li class="statusItem">
+          <a href="/" class="statusLink qnaHeaderExit sprite spriteExit"><span class="a11yHidden">취소</span></a>
+        </li>
+        <li class="statusItem qnaHeaderTextItem">
+          <p class="qnaHeaderText">Q&A 글쓰기</p>
+        </li>
+        <li class="statusItem">
+          <a href="/" class="statusLink qnaHeaderDone">완료</a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="qnaTopBox">
+        <p class="qnaTopLabel">FRONTEND</p>
+        <span class="sprite spriteMoveRight"></span>
+      </div>
+
+      <div class="qnaNoticeBox">
+        <div class="blueNoticeBox">
+          <p class="qnaNoticeMessage"><span class="qnaNoticeHighlight">안내</span> 중고거래 관련, 명예훼손, 광고/홍보 목적의 글은 </p>
+          <span>올리실 수 없어요.</span>
+          <span class="qnaNoticeDetail"><a href="/">Q&A글쓰기 운영정책</a></span>
+        </div>
+      </div>
+
+      <form name="qnaWriteForm" action="/" method="POST" class="qnaWriteForm">
+        <fieldset>
+          <legend>QNA 글 작성 폼</legend>
+          <div class="qnaWriteTitleGroup">
+            <!-- 제목 옆 일자 이미지 -->
+            <label for="postTitle" class="a11yHidden">제목</label>
+            <input type="text" id="postTitle" name="postTitle" required class="qnaWriteTitle" placeholder="제목" />
+          </div>
+          <div class="qnaWriteContentGroup">
+            <label for="postContent" class="a11yHidden">상세 글</label>
+            <textarea class="qnaWriteContent" style="overflow: hidden;"
+              placeholder="관심있는 분야에 대한 질문을 올려주세요. 장소&#13;&#10;정보와 사진을 함께 올리면 친구들에게 더 도움이 돼요"></textarea>
+          </div>
+        </fieldset>
+      </form>
+
+      <ul class="qnaBottomBarList">
+        <li class="sprite spritePicture a11yHidden"><a href="/">사진</a></li>
+        <li class="sprite spritePlace a11yHidden"><a href="/">장소</a></li>
+        <li class="sprite spriteKeyboard"></li>
+      </ul>
+      <img class="qnaKeyboardImg" src="/assets/bacon/iOS.png" alt="키보드 이미지" />
+    </main>
+
+  </div>
+</body>
+
+</html>
