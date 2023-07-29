@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" type="image/xml+svg" />
+  <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="./js/main.js" type="module"></script>
+  <title>Q&A 채팅 리스트 페이지</title>
+</head>
+
+<body>
+  <h1 class="a11yHidden">QNA 채팅 리스트 페이지</h1>
+
+  <div class="sizingWrapper">
+    <!-- Q&A 뒤로가기 + p + 전화 더보기 -->
+    <header class="mainHeader backHeaderButton">
+      <h2 class="a11yHidden">기본 정보</h2>
+      <div class="timeInfo">
+        <time class="timeInfoDate" datetime="2023-08-02T02:26">2:26</time>
+        <ul class="celluarInfo">
+          <li class="celluarInfoItem">
+            <span class="sprite spriteReceptionSensitivity"></span>
+            <p class="a11yHidden">수신감도</p>
+          </li>
+          <li class="celluarInfoItem">
+            <span class="sprite spriteLte"></span>
+            <p class="a11yHidden">데이터 종류</p>
+          </li>
+          <li class="celluarInfoItem">
+            <span class="sprite spriteBattery"></span>
+            <p class="a11yHidden">배터리 잔량</p>
+          </li>
+        </ul>
+      </div>
+      <ul class="statusBar">
+        <li class="statusItem">
+          <a href="/" class="statuLink qnaHeaderCall sprite spriteBack"><span class="a11yHidden">뒤로가기</span></a>
+        </li>
+        <li class="statusItem statusBarQchat">
+          <p class="qnaHeaderChatName">카페인조아</p>
+          <span class="qnaHeaderAnswer">보통 3일 내 응답</span>
+        </li>
+        <li class="statusItem">
+          <a href="/" class="statusLink qnaHeaderCall sprite spriteCall"><span class="a11yHidden">통화하기</span></a>
+        </li>
+        <li class="statusItem">
+          <a href="/" class="statusLink qnaHeaderMore sprite spriteMore"><span class="a11yHidden">더보기</span></a>
+        </li>
+      </ul>
+      </header>
+      
+      <main>
+        <div class="chatProfileBox">
+          <img src="/images/chatImage.png" alt="채팅 상대 프로필 이미지" class="qnaChatItemImg" />
+          <h3 class="chatItemDetail">
+            <div class="chatItemNamePrice">
+              <span class="chatItemSell">판매중</span>
+              <span class="chatItemName">intel mac 2017</span>
+            </div>
+            <span class="chatItemPrice">800,000</span>
+          </h3>
+        </div>
+      
+        <div class="chatButtonBox">
+          <button class="calButton">
+            <span class="sprite spriteCal"></span>
+            <p class="calMessage">약속 잡기</p>
+          </button>
+          <a href="/" class="wonButton">
+            <span class="sprite spriteWon"></span>
+            <p class="wonMessage">송금 하기</p>
+          </a>
+        </div>
+      
+        <div class="outChatNoticeBox">
+          <!-- 상단 알림 박스 -->
+          <div class="chatNoticeBox">
+            <div class="chatNoticeMessage">
+              <span class="chatNoticeBold">💸카페인조아님은 우수판매자예요.</span>
+              <span class="chatNoticeMessage">개인정보유도와 명예훼손</span>
+              <p class="chatNoticeMessage">내용은 차단될 수 있어요.
+                <a class="chatNoticeDetail" href="/">자세히 보기</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="dateBox">
+          <time class="chatDate" datetime="2023-02-21">2023년 2월 21일</time>
+        </div>
+        <!-- 채팅들 -->
+        <div class="myChat">
+          <div class="chatContents chatSend">
+            <time class="chatTime" datetime="2023-02-21T16:30:00">오후 4:30</time>
+            <p class="chatMessage">가격 네고 가능한가요?</p>
+          </div>
+          <div class="chatContents chatSend">
+            <time class="chatTime" datetime="2023-02-21T17:32:00">오후 5:32</time>
+            <p class="chatMessage">목요일 거래 가능할까요?</p>
+          </div>
+      
+          <div class="dateBox">
+            <time class="chatDate" datetime="2023-02-22">2023년 2월 22일</time>
+          </div>
+      
+          <div class="chatContents chatSend">
+            <time class="chatTime" datetime="2023-02-22T21:16:16">오후 9:16</time>
+            <p class="chatMessage">판매 안하시나요?ㅠㅠ</p>
+          </div>
+        </div>
+      
+        <div class="dateBox">
+          <time class="chatDate" datetime="2023-03-06">2023년 3월 6일</time>
+        </div>
+      
+        <div class="yourChatBox">
+          <div class="chatContents chatReceive">
+            <p class="chatReceiveMessage">죄송해요ㅠㅠ 제가 핸드폰을 바꿔서 지금봤네요ㅠㅠ
+              팡매는 안됐는데 먼저 연락하신분이 있어서 답장 기다리고 있습니다 ㅠㅠ
+            </p>
+          </div>
+        </div>
+      
+        <!-- 메세지 입력 폼 -->
+        <form name="chatMessageForm" action="/" method="POST" class="chatMessageForm">
+          <fieldset>
+            <legend>채팅 메세지 입력 폼</legend>
+            <ul class="messageInputList">
+              <li class="sprite spritePlus"></li>
+              <li class="messageSendInput">
+                <label for="messageInput" class="a11yHidden">입력창</label>
+                <input type="text" id="messageInput" name="messageInput" class="messageInputBar" required
+                  placeholder="메세지 보내기" />
+              </li>
+              <li><input class="sprite spriteSend" type="submit" value="" /></li>
+            </ul>
+          </fieldset>
+        </form>
+      </main>
+      </div>
+      
+      </body>
+      
+      </html>

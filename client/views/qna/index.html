@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+      type="image/xml+svg"
+    />
+    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js" type="module"></script>
+    <title>Q&A 메인페이지</title>
+  </head>
+
+    <body>
+    <header class="qnaHeader">
+    <h1 class="a11yHidden">엔터이듬 Q&A 게시판 페이지</h1>
+        <div class="sizingWrapper">
+          <!-- 로그인/보드 뒤로가기 버튼  -->
+            <div class="timeInfo">
+              <time class="timeInfoDate" datetime="2023-06-25T02:26">2:26</time>
+              <ul class="celluarInfo">
+                <li class="celluarInfoItem">
+                  <span class="sprite spriteReceptionSensitivity"></span>
+                  <p class="a11yHidden">수신감도</p>
+                </li>
+                <li class="celluarInfo__item">
+                  <span class="sprite spriteLte"></span>
+                  <p class="a11yHidden">데이터 종류</p>
+                </li>
+                <li class="celluarInfo__item">
+                  <span class="sprite spriteBattery"></span>
+                  <p class="a11yHidden">배터리 잔량</p>
+                </li>
+              </ul>
+            </div>
+      <button class="backButton" type="button">
+      <img src="./assets/icons/Icon/sprite.svg" alt="뒤로가기" class="backImg"/>  
+      </button>
+      <div class="qnaTitle">
+        <div class="qnaProfile">
+          <span class="profileHeader"></span>
+          <span class="profileName">Q&A</span>
+        </div>
+        <span class="qna__participating">
+          참여중</span>
+      </div>
+    </header>
+    
+    <main class="qnaMain">
+    <nav class="qnaNav">
+      <ul class="qnaNavList">
+        <li class="navList"><img src="./assets/icons/Icon/sprite.svg" alt="홈" /><a href="/" class="navLink">홈</a></li>
+        <li class="navList"><img src="./assets/icons/Icon/sprite.svg" alt="게시판" /><a href="/" class="navLink">게시판</a></li>
+        <li class="navList"><img src="./assets/icons/Icon/sprite.svg" alt="내 근처" /><a href="/" class="navLink">내 주변</a></li>
+        <li class="navList"><img src="./assets/icons/Icon/sprite.svg" alt="채팅" /><a href="/" class="navLink">채팅</a></li>
+        <li class="navList"><img src="./assets/icons/Icon/sprite.svg" alt="나의 이듬" /><a href="/" class="navLink">나의 이듬</a></li>
+      </ul>
+    </nav>
+
+
+
+    <article class="qnaBoard">
+      <div class="qnaBoardItem">
+        <span class="qnaBoardLabel">JS</span>
+        <h3><a href="/">JS에서 함수 선언문과 표현식의 차이를 잘 모르겠어요ㅜㅜㅜ</a></h3>
+        <p class="qnaBoardDetail">
+          함수 선언문과 표현식의 차이를 아직 잘 모르겠네요.. 순차실행에서 차이점이 있는건가요
+        </p>
+        <p class="basicData">북가좌동 &#8226; 2일 전 </p>
+      </div>
+    </article>
+
+    <article class="qnaBoard">
+      <div class="qnaBoardItem">
+        <span class="qnaBoardLabel">UI &#8226; UX</span>
+        <h3><a href="/">아니 auto Layout 했는데 왜 이러냐 진짜 정말로</a></h3>
+        <p class="qnaBoardDetail">아니 이거 묶으려고 auto Layout 했는데 왜 어그러지는것이야진짜정말로스트레스받아서나개발자못해</p>
+        <p class="basicData">망원동 &#8226; 2일 전 &#8226; 조회 132</p>
+        <span class="qnaImage"></span>
+      </div>
+      <p class="likeCount">
+        <span class="iconThumbsup" aria-hidden="true"></span>2
+        <span class="iconComment" aria-hidden="true"></span>1
+      </p>
+    </article>
+
+    <article class="qnaBoard">
+      <div class="qnaBoardItem">
+        <span class="qnaBoardLabel">HTML</span>
+        <h3><a href="/">웹 접근성 적용해서 코드 짜려는데 여기...</a></h3>
+        <p class="qnaBoardDetail">
+          aria-hidden 적용하면 보이는 거 안들리는 거 맞죠?제가 맞는거죠?보셨나요?
+        </p>
+        <p class="basicData">남가좌제2동 &#8226; 4일 전 &#8226; 조회 19</p>
+      </div>
+    </article>
+    
+    
+    <article class="qnaBoard">
+      <div class="qnaBoardItem">
+        <span class="qnaBoardLabel">css</span>
+        <h3><a href="/">CSS flex 적용했는데 왜 이러는지 모르겠습니다.</a></h3>
+        <p class="qnaBoardDetail">
+          flex justify-content : center 적용했는데 왜 이렇게 끝으로감???
+        </p>
+        <p class="basicData">성산제3동 &#8226; 7일 전</p>
+      </div>
+      <p class="likeCount">
+        <span class="iconThumbsup" aria-hidden="true"></span>6
+        <span class="iconSpeech" aria-hidden="true"></span>3
+      </p>
+    </article>
+      
+
+    <article class="qnaBoard">
+      <div class="qnaBoardItem">
+        <span class="qnaBoardLabel">UI &#8226; UX</span>
+        <h3><a href="/">Figma 하는 중인데 어두운 화면이면 어떻게 적용해야 함?</a></h3>
+        <p class="basicData">망원동 &#8226; 2일 전 </p>
+        <span class="qnaImage"></span>
+      </div>
+      <p class="likeCount">
+        <span class="iconThumbsup" aria-hidden="true"></span>1
+        <span class="iconSpeech" aria-hidden="true"></span>4
+      </p>
+    </article>
+    
+    
+    <article class="qnaBoard">
+      <div class="qnaBoardItem">
+        <span class="qnaBoardLabel">UI &#8226; UX</span>
+        <h3><a href="/">Figma 하는 중인데 어두운 화면이면 어떻게 적용해야 함?</a></h3>
+        <p class="basicData">망원동 &#8226; 2일 전 </p>
+        <span class="qnaImage"></span>
+      </div>
+      <p class="likeCount">
+        <span class="iconThumbsup" aria-hidden="true"></span>1
+        <span class="iconSpeech" aria-hidden="true"></span>4
+      </p>
+    </article>
+
+  
+    </main>
+  </div>
+
+  </body>
+</html>
