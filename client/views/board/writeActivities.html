@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+      type="image/xml+svg"
+    />
+
+    <link rel="stylesheet" href="../../css/main.css" />
+    <script src="../../js/main.js" type="module"></script>
+    <title>project</title>
+  </head>
+
+  <body>
+    <div class="outer">
+      <div class="outer">
+        <div class="backBar">
+          <img src="/" alt="뒤로가기" tabindex="0" />
+        </div>
+        <main class="studyRecruit">
+          <h2 class="studyRecruitSubject">EUID 피그마 스터디 하실 분!</h2>
+          <form action="#">
+            <label for="town"></label>
+            <select name="townSelect" id="town" size="1">
+              <option value="select">카테고리를 선택해주세요.</option>
+              <option value="study">스터디</option>
+              <option value="project">프로젝트</option>
+              <option value="offline">오프라인</option>
+              <option value="award">공모전</option>
+              <option value="cowork">협업</option>
+              <option value="best">멋사</option>
+            </select>
+            <!-- <input type="submit" value="Submit" /> -->
+          </form>
+          <div class="studyWhat">
+            <label for="inputOn"></label>
+            <input type="text" id="inputOn" placeholder="활동 내용을 입력해주세요." />
+          </div>
+          <ul class="">
+            <li>
+              <div>
+                <img
+                  src="./../images/searchActicities/people.png"
+                  alt="인원"
+                  class="emptyHumanSprite"
+                />인원
+              </div>
+              <div>
+                <img
+                  src="./../images/searchActicities/minus.png"
+                  class="minusSprite"
+                  alt="줄이기"
+                  tabindex="0"
+                />
+                <span>4명</span>
+                <img
+                  src="./../images/searchActicities/plus.png"
+                  class="plusSprite"
+                  alt="늘리기"
+                  tabindex="0"
+                />
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  src="./../images/searchActicities/calender.png"
+                  alt="날짜"
+                  class="calenderBlackSprite"
+                />날짜
+              </div>
+              <div tabindex="0">오늘</div>
+            </li>
+            <li>
+              <div>
+                <img
+                  src="./../images/searchActicities/time.png"
+                  alt="시간"
+                  class="clockSprite"
+                />시간
+              </div>
+              <div tabindex="0">오후 8:00</div>
+            </li>
+            <li>
+              <div>
+                <img
+                  src="./../images/searchActicities/map.png"
+                  alt="장소"
+                  class="locationSprite"
+                />장소
+              </div>
+              <div>
+                <label for="location"></label>
+                <input type="text" id="location" placeholder="입력해주세요" />
+              </div>
+            </li>
+          </ul>
+          <button class="nextButton" onclick="location.href='/'">다음</button>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

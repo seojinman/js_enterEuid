@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+      type="image/xml+svg"
+    />
+
+    <link rel="stylesheet" href="../../css/main.css" />
+    <script src="../../js/main.js" type="module"></script>
+    <title>project</title>
+  </head>
+
+  <body>
+    <div class="outer">
+      <header>
+        <div class="backBar">
+          <img src="/" alt="뒤로가기" tabindex="0" />
+        </div>
+        <h2 class="subjectTitle">EUID 피그마 스터디 하실 분 ~</h2>
+      </header>
+      <div class="chatContainer">
+        <article class="chatContents">
+          <div class="chatInput">
+            <div class="moreContents"><img src="/" alt="추가로 보내기" /></div>
+            <div class="chatInputContainer">
+              <form>
+                <label for="chatSend"></label>
+                <input type="text" id="chatSend" placeholder="메시지 보내기" />
+                <button type="submit" class="send" data-name="send">
+                  <span class="chatSendSprite"></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
