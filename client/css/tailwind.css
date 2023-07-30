@@ -16,17 +16,11 @@
 }
 
 @layer utilities {
-  .a11yHidden,
-  legend {
-    @apply overflow-hidden absolute w-px h-px -m-px;
-    clip: rect(0, 0, 0, 0);
-    clip-path: inset(50%);
-  }
   html {
     height: 100%;
   }
   body {
-    @apply bg-white max-w-xs min-w-[20rem] h-full bg-white shadow-[rgba(0,0,0,0.16)_0px_0px_8px] border mx-auto border-solid border-[#e9e9e9];
+    @apply bg-white max-w-xs min-w-[20rem] h-full shadow-[rgba(0,0,0,0.16)_0px_0px_8px] border mx-auto border-solid border-[#e9e9e9];
     font-family:
       Pretendard,
       -apple-system,
@@ -48,16 +42,4 @@
     position: relative;
     width: 320px;
   }
-  /*.sprite {
-    display: inline-block;
-    background-image: url('./../../assets/icons/Icon/sprite.svg');
-    background-repeat: no-repeat;
-  }
-
-  .down {
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
-    background-position: -155px -70px;
-  }*/
 }
