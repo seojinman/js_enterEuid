@@ -16,92 +16,128 @@
   </head>
 
   <body>
-    <div class="outer">
-      <div class="outer">
-        <div class="backBar">
-          <img src="/" alt="뒤로가기" tabindex="0" />
+    <div
+      class="outer w-80 h-[763px] -translate-x-2/4 -translate-y-2/4 absolute bg-[red] left-2/4 top-2/4 overflow-hidden"
+    >
+      <header class="">
+        <div
+          class="backBar flex flex-nowrap flex-row px-3 h-[46px] bg-pink-500 items-center justify-center"
+        >
+          <img src="/" class="left-[12px] absolute" alt="뒤로가기" tabindex="0" />
         </div>
-        <main class="studyRecruit">
-          <h2 class="studyRecruitSubject">EUID 피그마 스터디 하실 분!</h2>
-          <form action="#">
-            <label for="town"></label>
-            <select name="townSelect" id="town" size="1">
-              <option value="select">카테고리를 선택해주세요.</option>
-              <option value="study">스터디</option>
-              <option value="project">프로젝트</option>
-              <option value="offline">오프라인</option>
-              <option value="award">공모전</option>
-              <option value="cowork">협업</option>
-              <option value="best">멋사</option>
-            </select>
-            <!-- <input type="submit" value="Submit" /> -->
-          </form>
-          <div class="studyWhat">
-            <label for="inputOn"></label>
-            <input type="text" id="inputOn" placeholder="활동 내용을 입력해주세요." />
-          </div>
-          <ul class="">
-            <li>
-              <div>
-                <img
-                  src="./../images/searchActicities/people.png"
-                  alt="인원"
-                  class="emptyHumanSprite"
-                />인원
-              </div>
-              <div>
-                <img
-                  src="./../images/searchActicities/minus.png"
-                  class="minusSprite"
-                  alt="줄이기"
-                  tabindex="0"
-                />
-                <span>4명</span>
-                <img
-                  src="./../images/searchActicities/plus.png"
-                  class="plusSprite"
-                  alt="늘리기"
-                  tabindex="0"
-                />
-              </div>
-            </li>
-            <li>
-              <div>
-                <img
-                  src="./../images/searchActicities/calender.png"
-                  alt="날짜"
-                  class="calenderBlackSprite"
-                />날짜
-              </div>
-              <div tabindex="0">오늘</div>
-            </li>
-            <li>
-              <div>
-                <img
-                  src="./../images/searchActicities/time.png"
-                  alt="시간"
-                  class="clockSprite"
-                />시간
-              </div>
-              <div tabindex="0">오후 8:00</div>
-            </li>
-            <li>
-              <div>
-                <img
-                  src="./../images/searchActicities/map.png"
-                  alt="장소"
-                  class="locationSprite"
-                />장소
-              </div>
-              <div>
-                <label for="location"></label>
-                <input type="text" id="location" placeholder="입력해주세요" />
-              </div>
-            </li>
-          </ul>
-          <button class="nextButton" onclick="location.href='/'">다음</button>
-        </main>
-      </div>
+      </header>
+      <main class="studyRecruit">
+        <h2 class="studyRecruitSubject h-[46px] pl-7 py-3 ext-[1.1875rem] font-semibold">
+          EUID 피그마 스터디 하실 분!
+        </h2>
+        <form action="#">
+          <label for="activity"></label>
+          <select
+            class="appearance-none w-full text-sm font-normal block h-[54px] px-5"
+            name="activities"
+            id="activity"
+            size="1"
+          >
+            <option value="select">카테고리를 선택해주세요.</option>
+            <option value="study">스터디</option>
+            <option value="project">프로젝트</option>
+            <option value="offline">오프라인</option>
+            <option value="award">공모전</option>
+            <option value="cowork">협업</option>
+            <option value="best">멋사</option>
+          </select>
+          <!-- <input type="submit" value="Submit" /> -->
+        </form>
+        <div class="relative">
+          <label for="inputOn"></label>
+          <input
+            type="text"
+            class="w-full h-[57px] px-5 text-[0.625rem] font-normal"
+            id="inputOn"
+            placeholder="활동 내용을 입력해주세요."
+          />
+        </div>
+        <ul class="absolute w-full text-sm">
+          <li
+            class="flex flex-nowrap flex-row px-5 h-[46px] bg-pink-600 items-center justify-between"
+          >
+            <div class="h-[16px] flex">
+              <img
+                src="./../images/searchActicities/people.png"
+                alt="/"
+                class="emptyHumanSprite h-[16px] w-[16px]"
+              />인원
+            </div>
+            <div
+              class="flex flex-nowrap flex-row px-5 h-[16px] bg-pink-500 items-center justify-between"
+            >
+              <img
+                src="./../images/searchActicities/minus.png"
+                class="minusSprite h-[16px] w-[16px]"
+                alt="/"
+                tabindex="0"
+              />
+              <span class="mx-[11px]">4명</span>
+              <img
+                src="./../images/searchActicities/plus.png"
+                class="plusSprite h-[16px] w-[16px]"
+                alt="/"
+                tabindex="0"
+              />
+            </div>
+          </li>
+          <li
+            class="flex flex-nowrap flex-row px-5 h-[46px] bg-pink-500 items-center justify-between"
+          >
+            <div class="h-[16px] flex">
+              <img
+                src="./../images/searchActicities/calender.png"
+                alt="날짜"
+                class="calenderBlackSprite h-[16px] w-[16px]"
+              />날짜
+            </div>
+            <div tabindex="0">오늘</div>
+          </li>
+          <li
+            class="flex flex-nowrap flex-row px-5 h-[46px] bg-pink-500 items-center justify-between"
+          >
+            <div class="h-[16px] flex">
+              <img
+                src="./../images/searchActicities/time.png"
+                alt="시간"
+                class="clockSprite h-[16px] w-[16px]"
+              />시간
+            </div>
+            <div tabindex="0">오후 8:00</div>
+          </li>
+          <li
+            class="flex flex-nowrap flex-row px-5 h-[46px] bg-pink-500 items-center justify-between"
+          >
+            <div class="h-[16px] flex">
+              <img
+                src="./../images/searchActicities/map.png"
+                alt="장소"
+                class="locationSprite h-[16px] w-[16px]"
+              />장소
+            </div>
+            <div>
+              <label for="location"></label>
+              <input
+                class="text-right appearance-none"
+                type="text"
+                id="location"
+                placeholder="입력해주세요"
+              />
+            </div>
+          </li>
+        </ul>
+        <button
+          class="nextButton bg-[#373F67] text-[white] text-sm w-[92.8125%] h-[45px] fixed mt-6 mb-[2.125rem] mx-[3.75%] rounded-lg border-0 bottom-[2.125rem]"
+          onclick="location.href='/'"
+        >
+          다음
+        </button>
+      </main>
     </div>
   </body>
 </html>

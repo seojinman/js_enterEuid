@@ -16,84 +16,136 @@
   </head>
 
   <body>
-    <div class="outer">
-      <header>
-        <div class="backBar">
-          <img src="/" alt="뒤로가기" tabindex="0" />
+    <div
+      class="outer w-80 h-[763px] -translate-x-2/4 -translate-y-2/4 absolute bg-[red] left-2/4 top-2/4 overflow-hidden"
+    >
+      <header class="fixed top-0 inset-x-0 bg-pink-900">
+        <div
+          class="backBar flex flex-nowrap flex-row px-3 h-[36px] bg-pink-500 items-center justify-center"
+        >
+          <img src="/" class="left-[12px] absolute" alt="뒤로가기" tabindex="0" />
           <h2 class="subjectTitle">같이해요</h2>
         </div>
-        <nav class="subjectTogetherNav">
-          <figure tabindex="0">
-            <img src="./../images/board/01.png" alt="전체" />
-            <figcaption>전체</figcaption>
-          </figure>
-          <figure tabindex="0">
-            <img src="./../images/board/02.png" alt="스터디" />
-            <figcaption>스터디</figcaption>
-          </figure>
-          <figure tabindex="0">
-            <img src="./../images/board/03.png" alt="프로젝트" />
-            <figcaption>프로젝트</figcaption>
-          </figure>
-          <figure tabindex="0">
-            <img src="./../images/board/04.png" alt="오프라인" />
-            <figcaption>오프라인</figcaption>
-          </figure>
-          <figure tabindex="0">
-            <img src="./../images/board/05.png" alt="공모전" />
-            <figcaption>공모전</figcaption>
-          </figure>
+        <nav class="subjectTogetherNav bg-gray-400 text-[0.625rem] font-semibold h-[91px] relative">
+          <div
+            class="flex justify-start items-stretch w-full text-center text-[0.66rem] flex-row flex-nowrap bg-yellow-400 pl-5 py-2 absolute -translate-x-2/4 -translate-y-2/4 left-2/4 box-border top-2/4"
+          >
+            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] bg-purple-300 mr-3">
+              <img src="/" class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]" alt="/" />
+              <figcaption class="bg-blue-500 mt-[6px]">전체</figcaption>
+            </figure>
+            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] bg-purple-300 mr-3">
+              <img src="/" class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]" alt="/" />
+              <figcaption class="bg-blue-500 mt-[6px]">스터디</figcaption>
+            </figure>
+            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] bg-purple-300 mr-3">
+              <img src="/" class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]" alt="/" />
+              <figcaption class="bg-blue-500 mt-[6px]">프로젝트</figcaption>
+            </figure>
+            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] bg-purple-300 mr-3">
+              <img src="/" class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]" alt="/" />
+              <figcaption class="bg-blue-500 mt-[6px]">오프라인</figcaption>
+            </figure>
+            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] bg-purple-300 mr-3">
+              <img src="/" class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]" alt="/" />
+              <figcaption class="bg-blue-500 mt-[6px]">공모전</figcaption>
+            </figure>
+            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] bg-purple-300 mr-3">
+              <img src="/" class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]" alt="/" />
+              <figcaption class="bg-blue-500 mt-[6px]">이력서</figcaption>
+            </figure>
+          </div>
         </nav>
+        <div class="subjectTogetherSort bg-blue-200">
+          <button
+            class="subjectTogetherSortRecent ml-3.5 mr-auto mt-2 mb-3 border text-[0.66rem] bg-transparent no-underline cursor-pointer px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+          >
+            최근 작성 순
+          </button>
+          <button
+            class="subjectTogetherSortNow ml-3.5 mr-auto mt-2 mb-3 border text-[0.66rem] bg-transparent no-underline cursor-pointer px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+          >
+            모집 중인 글만
+          </button>
+        </div>
       </header>
-      <div class="subjectTogetherSort">
-        <button class="subjectTogetherSortRecent">최근 작성 순</button>
-        <button class="subjectTogetherSortNow">모집 중인 글만</button>
-      </div>
-      <main>
-        <section class="togetherSection">
-          <div class="togetherContainer">
+      <main class="bg-yellow-700 mt-[11rem]">
+        <section
+          class="togetherSection boardSection box-border p-3 flex justify-between items-stretch flex-nowrap flex-row"
+        >
+          <div class="togetherContainer w-[190px]">
             <p><span class="togetherRecruit">모집중</span> • 스터디 • 연남동</p>
-            <h3><a href="#">EUID 피그마 스터디 하실분~ </a></h3>
+            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block">
+              <a href="#">EUID 피그마 스터디 하실분~ </a>
+            </h3>
             <p class="boardPeople">
               <span class="boardHumanSprite" aria-hidden="true"></span>
               누구나 참여가능
             </p>
             <p><span class="calenderSprite" aria-hidden="true"></span> 오늘, 오후 7:00</p>
-            <p><span class="togetherPeople"></span> 1/4명</p>
+            <p class=""><span class="togetherPeople"></span> 1/4명</p>
           </div>
-          <p class="togetherWhen">35분 전</p>
+          <p class="togetherWhen ml-auto mr-0 mt-auto mb-0">35분 전</p>
         </section>
-        <section class="togetherSection">
-          <div class="togetherContainer">
+        <section
+          class="togetherSection boardSection box-border p-3 flex justify-between items-stretch flex-nowrap flex-row"
+        >
+          <div class="togetherContainer w-[190px]">
             <p>모집종료 • 프로젝트 • 남가좌제2동</p>
-            <h3><a href="#">엔터이듬 클론 프로젝트 오프라인으로다가 하실분 구함</a></h3>
+            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block">
+              <a href="#">엔터이듬 클론 프로젝트 오프라인으로다가 하실분 구함</a>
+            </h3>
             <p><span class="boardHumanSprite"></span> 25-35세 | 여자만 가능</p>
             <p><span class="calenderSprite"></span> 5월1일 -14일, 오후 4:00</p>
-            <p><span class="togetherPeople"></span> 4/4명</p>
+            <p class=""><span class="togetherPeople"></span> 4/4명</p>
           </div>
-          <p class="togetherWhen">5분 전</p>
+          <p class="togetherWhen ml-auto mr-0 mt-auto mb-0">5분 전</p>
         </section>
-        <section class="togetherSection">
-          <div class="togetherContainer">
+        <section
+          class="togetherSection boardSection box-border p-3 flex justify-between items-stretch flex-nowrap flex-row"
+        >
+          <div class="togetherContainer w-[190px]">
             <p>모집종료 • 스터디 • 연남동</p>
-            <h3><a href="#">알고리즘 매일 아침마다 인증할 분</a></h3>
+            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block">
+              <a href="#">알고리즘 매일 아침마다 인증할 분</a>
+            </h3>
             <p><span class="boardHumanSprite"></span> 누구나 참여 가능</p>
             <p><span class="calenderSprite"></span> 5월 1일, 오전 10:00</p>
-            <p><span class="togetherPeople"></span> 4/4명</p>
+            <p class=""><span class="togetherPeople"></span> 4/4명</p>
           </div>
-          <p class="togetherWhen">7일 전</p>
+          <p class="togetherWhen ml-auto mr-0 mt-auto mb-0">7일 전</p>
         </section>
-        <section class="togetherSection">
-          <div class="togetherContainer">
+        <section
+          class="togetherSection boardSection box-border p-3 flex justify-between items-stretch flex-nowrap flex-row"
+        >
+          <div class="togetherContainer w-[190px]">
             <p><span class="togetherRecruit">모집중</span> • 스터디 • 연남동</p>
-            <h3><a href="#">멋사플레이스 클론 코딩 스터디 하실분 제발와줘</a></h3>
+            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block">
+              <a href="#">멋사플레이스 클론 코딩 스터디 하실분 제발와줘</a>
+            </h3>
             <p><span class="boardHumanSprite"></span> 누구나 참여 가능</p>
             <p><span class="calenderSprite"></span> 오늘, 오후 7:00</p>
-            <p><span class="togetherPeople"></span> 1/4명</p>
+            <p class=""><span class="togetherPeople"></span> 1/4명</p>
           </div>
-          <p class="togetherWhen">35분 전</p>
+          <p class="togetherWhen ml-auto mr-0 mt-auto mb-0">35분 전</p>
         </section>
       </main>
+
+      <button
+        class="fixed inline-block h-12 w-12 text-white bg-[#373F67] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] z-[2] p-2.5 rounded-[50%] right-3 bottom-[6.375rem]"
+        aria-label="글 작성하기"
+      ></button>
+      <footer
+        class="footer h-[37px] fixed bottom-0 inset-x-0 bg-pink-300 pt-2 pb-6 px-3 box-border"
+      >
+        <div class="footerWrap flex items-stretch flex-nowrap flex-row justify-between">
+          <button class="buttonHome w-[20px] h-[37px]"><img src="/" alt="/" />홈</button>
+          <button class="buttonBoard w-[20px] h-[37px]"><img src="/" alt="/" />게시판</button>
+          <button class="buttonLocation w-[20px] h-[37px]"><img src="/" alt="/" />내주변</button>
+          <button class="buttonChat w-[20px] h-[37px]"><img src="/" alt="/" />채팅</button>
+          <button class="buttonMy w-[20px] h-[37px]"><img src="/" alt="/" />나의 이듬</button>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

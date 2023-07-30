@@ -16,28 +16,36 @@
   </head>
 
   <body>
-    <div class="outer">
-      <header>
-        <div class="backBar">
-          <img src="/" alt="뒤로가기" tabindex="0" />
+    <div
+      class="outer px-3 w-80 h-[763px] -translate-x-2/4 -translate-y-2/4 absolute bg-yellow-200 left-2/4 top-2/4 overflow-hidden"
+    >
+    <header class="">
+      <div
+      class="backBar flex flex-nowrap flex-row py-2 h-[36px] bg-pink-500 items-stretch justify-between"
+      >
+      <div class=""><img src="/" class="left-[12px] absolute" alt="/" tabindex="0" /></div>
+      <h2 class="subjectTitle text-sm">EUID 피그마 스터디 하실 분 ~</h2>
+          <div class="">
+            <img src="/" role="button" alt="더보기" tabindex="0" />
+          </div>
         </div>
-        <h2 class="subjectTitle">EUID 피그마 스터디 하실 분 ~</h2>
-      </header>
-      <div class="chatContainer">
-        <article class="chatContents">
+      
+      <div class="chatContainer fixed bottom-0 inset-x-0 bg-pink-300 pt-2 pb-6 px-3 box-border">
+        <section class="chatContents flex justify-start items-center w-full bottom-[1.875rem] flex-row flex-nowrap 
+        ">
+          <div class="moreContents "><img src="/" alt="/" /></div>
           <div class="chatInput">
-            <div class="moreContents"><img src="/" alt="추가로 보내기" /></div>
             <div class="chatInputContainer">
-              <form>
+              <form class="">
                 <label for="chatSend"></label>
-                <input type="text" id="chatSend" placeholder="메시지 보내기" />
+                <input class="h-[38px] text-sm leading-[160%] grow-[2] px-3 py-2 rounded-[20px] border-[none]" type="text" id="chatSend" placeholder="메시지 보내기" />
                 <button type="submit" class="send" data-name="send">
                   <span class="chatSendSprite"></span>
                 </button>
               </form>
             </div>
           </div>
-        </article>
+        </section>
       </div>
     </div>
   </body>
