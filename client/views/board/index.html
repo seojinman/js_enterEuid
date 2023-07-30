@@ -10,18 +10,20 @@
       type="image/xml+svg"
     />
 
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/main.js" type="module"></script>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <script src="../../js/main.js" type="module"></script>
     <title>project</title>
   </head>
 
   <body>
-    <div class="outer">
-      <header class="statusBar">
+    <div
+      class="outer w-80 h-[763px] -translate-x-2/4 -translate-y-2/4 absolute bg-[red] left-2/4 top-2/4 overflow-hidden"
+    >
+      <!--<div class="statusWrap flex justify-between items-stretch flex-nowrap flex-row"> 
         <h2 class="a11yHidden">기본 정보</h2>
-        <div class="stausWrap">
+        <div class="flex justify-between items-stretch flex-nowrap flex-row">
           <time class="statusTime" datetime="2023-06-25T02:26">2:26</time>
-          <ul class="statusCell">
+          <ul class="statusCell flex justify-between items-stretch flex-nowrap flex-row">
             <li class="cellStick">
               <span class="cellStickSprite"></span>
               <p class="a11yHidden">수신감도</p>
@@ -36,37 +38,68 @@
             </li>
           </ul>
         </div>
-      </header>
+      </div>-->
+      <header class="boardHeader fixed top-0 inset-x-0">
       <main>
-        <div class="boardHeader">
-          <ul>
+        <div class="">
+          <ul
+            class="flex items-stretch flex-nowrap flex-row px-5 bg-yellow-200 justify-between py-1.5"
+          >
             <li>
-              <p class="a11yHidden">동네 정보</p>
-              남가좌제2동
-              <img src="/" alt="동네" />
+              <form action="#">
+                <label for="town"></label>
+                <select class="appearance-none" name="townSelect" id="town" size="1">
+                  <option value="town1">남가좌제2동</option>
+                  <option value="town2">신내동</option>
+                  <option value="town3">다산신도시</option>
+                  <option value="town4">북경</option>
+                  <option value="town5">전남</option>
+                  <option value="town6">부산</option>
+                  <option value="best">지도에서 찾기</option>
+                </select>
+
+                <!-- <input type="submit" value="Submit" /> -->
+              </form>
             </li>
-            <li>
-              <img src="/" alt="검색" />
-            </li>
-            <li>
-              <img src="/" alt="메뉴" />
-            </li>
-            <li>
-              <img src="/" alt="알림" />
+            <li class="flex justify-between items-stretch flex-nowrap flex-row">
+              <img src="/" alt="/" />
+              <img src="/" alt="/" />
+              <img src="/" alt="/" />
             </li>
           </ul>
         </div>
-        <div class="subjectBar">
-          <button class="subjectList" onclick="location.href='boardtheme.html'">
-            <span class="icon__hamburger" aria-hidden="true"></span>주제
+        <div class="subjectBar px-3 py-2">
+          <button
+            class="subjectList border text-[0.66rem] bg-transparent no-underline cursor-pointer px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+            onclick="location.href='/'"
+          >
+            <span class="hamburgerSprite" aria-hidden="true"></span>주제
           </button>
-          <button class="subjectFavorite">인기글</button>
-          <button class="subjectTogether">같이해요</button>
-          <button class="subjectQna" onclick="location.href='qna.html'">질의응답</button>
-          <button class="subjectBoard">자유게시판</button>
+          <button
+            class="subjectFavorite border text-[0.66rem] bg-transparent no-underline cursor-pointer px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+          >
+            인기글
+          </button>
+          <button
+            class="subjectTogether border text-[0.66rem] bg-transparent no-underline cursor-pointer px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+          >
+            같이해요
+          </button>
+          <button
+            class="subjectQna border text-[0.66rem] bg-transparent no-underline cursor-pointer px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+            onclick="location.href='qna.html'"
+          >
+            질의응답
+          </button>
+          <button
+            class="subjectBoard border text-[0.66rem] bg-transparent no-underline cursor-pointer px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+          >
+            자유게시판
+          </button>
         </div>
-        <div class="boardWrap">
-          <section class="boardSection">
+      </header>
+        <div class="boardWrap bg-purple-700 pt-[5.625rem]">
+          <section class="boardSection flex justify-between items-stretch flex-nowrap flex-row">
             <div class="boardContainer">
               <span class="boardLabel">같이해요</span>
               <h3><a href="#">youtube 클론 프젝 같이 하실분~!</a></h3>
@@ -75,7 +108,6 @@
                 누구나 참여가능
               </p>
               <p>
-                <time class="currentTime" datetime="2023-07-29T02:26">2:26</time>
                 <span class="calenderSprite" aria-hidden="true"></span>
                 내일, 오후 7:00
               </p>
@@ -87,7 +119,7 @@
             </p>
           </section>
 
-          <section class="boardSection">
+          <section class="boardSection flex justify-between items-stretch flex-nowrap flex-row">
             <div class="boardContainer">
               <span class="boardLabel">질의응답</span>
               <h3><a href="#">아니 디버깅 돌려봤는데도 왜 이렇게 나오는거죠 대체</a></h3>
@@ -100,19 +132,18 @@
             </div>
           </section>
 
-          <section class="boardSection">
+          <section class="boardSection flex justify-between items-stretch flex-nowrap flex-row">
             <div class="boardContainer">
               <span class="boardLabel">질의응답</span>
-              <h3><a href="#">깊은 복사 얕은 복사의 차이를 모르겠어요</a></h3>
+              <h3><a href="#">CSS flex 중앙정렬 justify-content 말고 또 뭐있더라?</a></h3>
               <p>
-                제가 이해한 내용은 얕은 복사는 메모리를 공유하고 깊은 복사는 뭐였더라 힙 큐 어쩌고
-                배운지 한달넘어서 기억이 안나네
+                 figma보고 코드 짰는데 기억이 안나네;;;;
               </p>
               <p>남가좌동 • 15분 전 • 조회 12</p>
             </div>
           </section>
 
-          <section class="boardSection">
+          <section class="boardSection flex justify-between items-stretch flex-nowrap flex-row">
             <div class="boardContainer">
               <span class="boardLabel">질의응답</span>
               <h3><a href="#">CSS flex 중앙정렬 justify-content에서 뭐 줘야해요?</a></h3>
@@ -121,7 +152,7 @@
             </div>
           </section>
 
-          <section class="boardSection">
+          <section class="boardSection flex justify-between items-stretch flex-nowrap flex-row">
             <div class="boardContainer">
               <span class="boardLabel">자유게시판</span>
               <h3><a href="#">오늘 점심 뭐먹? 점메추~~~</a></h3>
@@ -131,18 +162,18 @@
             </div>
           </section>
 
-          <section class="boardSection">
+          <section class="boardSection flex justify-between items-stretch flex-nowrap flex-row">
             <div class="boardContainer">
               <span class="boardLabel">자유게시판</span>
-              <h3><a href="#">오늘 점심 뭐먹? 점메추~~~</a></h3>
-              <p>코드 공부하다 연희동 근처에서 밥먹을건데 밥은 님이 사주셔야합니다</p>
+              <h3><a href="#">짜증을 내어서 무얼하나 ~ </a></h3>
+              <p>열심히 해야지 모 방법 있겠냐구</p>
               <p>연희동 • 49분 전 • 조회 4</p>
               <img src="./../images/board/thumbnail.png" alt="미리보기 사진" />
             </div>
           </section>
         </div>
 
-        <footer class="footer">
+        <footer class="footer fixed bottom-0 inset-x-0 bg-pink-300">
           <div class="footerWrap">
             <button class="buttonHome">홈</button>
             <button class="buttonBoard">게시판</button>

@@ -1,0 +1,18 @@
+.outer {
+  @apply py-1.5;
+  @apply justify-between;
+  @apply px-5;
+}
+header {
+  @apply gap-3;
+  @apply pt-[5.625rem];
+  @apply block;
+  @apply fixed top-0 inset-x-0;
+  /* width: 100% */
+}
+
+.change {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
