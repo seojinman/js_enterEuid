@@ -14,30 +14,30 @@
   </head>
 
   <body>
-    <h1 class="a11yHidden">엔터이듬</h1>
+    <h1 class="sr-only">엔터이듬</h1>
 
     <header>
-      <h2 class="a11yHidden">기본 정보</h2>
+      <h2 class="sr-only">기본 정보</h2>
       <div class="flex justify-between items-center pt-2 px-4">
         <time class="inline-block text-sm font-semibold" datetime="2023-06-25T02:26">2:26</time>
         <ul class="flex justify-start items-start border-0">
           <li class="cellItem">
             <span
-              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[0.3125rem]"
             ></span>
-            <span class="a11yHidden">수신감도</span>
+            <span class="sr-only">수신감도</span>
           </li>
           <li class="cellItem">
             <span
               class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"
             ></span>
-            <span class="a11yHidden">데이터 종류</span>
+            <span class="sr-only">데이터 종류</span>
           </li>
           <li class="cellItem">
             <span
-              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[0.3125rem]"
             ></span>
-            <span class="a11yHidden">배터리 잔량</span>
+            <span class="sr-only">배터리 잔량</span>
           </li>
         </ul>
       </div>
@@ -55,10 +55,10 @@
         </div>
         <form action="/" class="ml-3 mr-1 mt-1 w-full flex-grow">
           <fieldset class="max-w-full">
-            <legend>검색 폼</legend>
+            <legend class="sr-only">검색 폼</legend>
             <label for="search">
               <span class="sprite spriteBack searchHeaderBack"></span
-              ><span class="a11yHidden">검색</span>
+              ><span class="sr-only">검색</span>
             </label>
             <input
               type="search"
@@ -71,7 +71,7 @@
       </div>
 
       <div class="searchContent max-w-xs h-[inherit] relative">
-        <h2 class="a11yHidden">많이 찾는 검색어</h2>
+        <h2 class="sr-only">많이 찾는 검색어</h2>
         <p class="searchRecommend text-sm font-semibold leading-[1.5%] pl-3 py-3">
           친구들이 많이 찾고 있어요!
         </p>
@@ -118,7 +118,7 @@
           </li>
         </ul>
       </div>
-      <div class="fixed inset-0 max-w-[320px] mx-auto">
+      <div class="fixed inset-0 max-w-[320px] mx-auto pointer-events-none">
         <button
           type="submit"
           class="submitButton leading-normal text-sm text-[#5A85EE] absolute border-0 right-4 bottom-[255px] bg-[transparent]"
@@ -126,7 +126,7 @@
           완료
         </button>
         <img
-          src="./../../assets/images/iOS.svg"
+          src="./../../assets/images/main/iOS.svg"
           alt="ios 키보드"
           class="w-[320px] h-[248px] absolute bottom-0 left-0 right-0 mx-auto"
         />
