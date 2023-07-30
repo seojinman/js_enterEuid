@@ -4,6 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* src/styles.css */
+@layer components {
+  .plusButton:hover + .exchangeWrite {
+    visibility: visible;
+    opacity: 1;
+  }
+  .plusButton:hover span {
+    color: black !important;
+  }
+}
+
 @layer utilities {
   .a11yHidden,
   legend {
@@ -32,6 +43,10 @@
       'Segoe UI Symbol',
       sans-serif;
     font: inherit;
+  }
+  main {
+    position: relative;
+    width: 320px;
   }
   /*.sprite {
     display: inline-block;

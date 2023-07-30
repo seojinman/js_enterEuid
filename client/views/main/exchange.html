@@ -10,7 +10,7 @@
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css"
     />
-    <link rel="stylesheet" href="/style/index.css" />
+    <link rel="stylesheet" href="./../../css/main.css" />
   </head>
 
   <body>
@@ -18,27 +18,44 @@
 
     <header>
       <h2 class="a11yHidden">기본 정보</h2>
-      <div class="timeWrapper">
-        <time class="timeInfo" datetime="2023-06-25T02:26">2:26</time>
-        <ul class="cellInfo">
+      <div class="flex justify-between items-center pt-2 px-4">
+        <time class="inline-block text-sm font-semibold" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="flex justify-start items-start border-0">
           <li class="cellItem">
-            <span class="sprite spriteSensitivity"></span>
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"
+            ></span>
             <span class="a11yHidden">수신감도</span>
           </li>
           <li class="cellItem">
-            <span class="sprite spriteLte"></span>
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"
+            ></span>
             <span class="a11yHidden">데이터 종류</span>
           </li>
           <li class="cellItem">
-            <span class="sprite spriteBattery"></span>
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"
+            ></span>
             <span class="a11yHidden">배터리 잔량</span>
           </li>
         </ul>
       </div>
-      <div class="statusBar">
-        <div class="selectLocation">
-          <label for="headerSelect">남가좌제2동 ▼</label
-          ><select id="headerSelect">
+      <div class="relative flex justify-start items-center gap-x-2 w-full h-10 px-4 pb-2">
+        <div
+          class="grow relative z-[1] before:content-[''] before:absolute before:w-0 before:h-0 before:ml-[30px] before:-mt-px before:right-[15px] before:top-2/4"
+        >
+          <label
+            for="headerSelect"
+            class="absolute w-4/5 z-[-1] text-lg font-bold py-2 top-[0.1875rem]"
+            >남가좌제2동<span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-70px] ml-[5px]"
+            ></span></label
+          ><select
+            id="headerSelect"
+            class="w-full h-auto leading-[normal] opacity-0 appearance-none px-[0.8125rem] py-2 border-0"
+          >
+            .
             <option value="남가좌제1동">남가좌제1동</option>
             <option value="남가좌제2동" selected>남가좌제2동</option>
             <option value="북가좌제1동">북가좌제1동</option>
@@ -47,50 +64,94 @@
             <option value="신촌동">신촌동</option>
           </select>
         </div>
-        <ul class="headerList">
-          <li class="headerItem">
-            <a class="sprite spriteSearch" aria-label="검색" href="search.html" tabindex="0"></a>
+        <ul class="flex w-[86px] h-[26px] justify-evenly mt-3">
+          <li class="w-[25px] h-[25px] pl-2.5">
+            <a
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-196px_-8px] ml-[5px] mt-1"
+              href="./search.html"
+              aria-label="검색"
+              tabindex="0"
+            ></a>
           </li>
-          <li class="headerItem">
-            <a class="sprite spriteMenu" href="/" aria-label="메뉴" tabindex="0"></a>
+          <li class="w-[25px] h-[25px] pl-2.5">
+            <a
+              class="inline-block bg-[url('./../../assets/icons/Icon/hamburger.svg')] bg-no-repeat w-5 h-5 ml-[3px] mt-0.5"
+              href="/"
+              aria-label="메뉴"
+              tabindex="0"
+            ></a>
           </li>
-          <li class="headerItem">
-            <a class="sprite spriteAlarm" href="/" aria-label="알림" tabindex="0"></a>
+          <li class="w-[25px] h-[25px] pl-2.5">
+            <a
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-269px_-116px] ml-[5px] mt-1"
+              href="/"
+              aria-label="알림"
+              tabindex="0"
+            ></a>
           </li>
         </ul>
       </div>
     </header>
 
-    <nav class="commonNav">
+    <nav
+      class="bg-white sticky min-w-xs max-w-xs border-t-[rgb(214,214,214)] border-t-0 border-solid bottom-0 border border-gray-200 shadow-md rounded-t-lg z-10"
+    >
       <h2 class="a11yHidden">메뉴</h2>
-      <ul class="commonList">
-        <li class="">
-          <a href="./main.html" class="commonLink">
-            <span class="sprite spriteFillHome"></span>
+      <ul
+        class="z-10 min-w-xs max-w-xs flex justify-between gap-4 bg-white items-stretch font-normal text-[0.6875rem] fixed mx-auto pt-0 pb-2 pr-2 bottom-0 left-0 right-0"
+      >
+        <li class="flex-1">
+          <a
+            href="./main.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[0px_-74px]"
+            ></span>
             <span>홈</span>
           </a>
         </li>
-        <li class="">
-          <a href="../board/board.html" class="commonLink">
-            <span class="sprite spriteBoard"></span>
+        <li class="flex-1">
+          <a
+            href="../board/board.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-72px_-46px]"
+            ></span>
             <span>게시판</span>
           </a>
         </li>
-        <li class="">
-          <a href="./exchange.html" class="commonLink">
-            <span class="sprite spritePlace"></span>
+        <li class="flex-1">
+          <a
+            href="./exchange.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-106px_-91px]"
+            ></span>
             <span>내 근처</span>
           </a>
         </li>
-        <li class="">
-          <a href="../qna/chatlists.html" class="commonLink">
-            <span class="sprite spriteChat"></span>
+        <li class="flex-1">
+          <a
+            href="../qna/chatlists.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-51px_-73px]"
+            ></span>
             <span>채팅</span>
           </a>
         </li>
-        <li class="">
-          <a href="../profile/profile.html" class="commonLink">
-            <span class="sprite spriteMyPage"></span>
+        <li class="flex-1">
+          <a
+            href="../profile/profile.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-99px_-46px]"
+            ></span>
             <span>나의 이름</span>
           </a>
         </li>
@@ -101,221 +162,378 @@
       <h2 class="a11yHidden">메인 메뉴</h2>
       <nav>
         <h3 class="a11yHidden">메인페이지 네비게이션</h3>
-        <ul class="mainNav">
+        <ul
+          class="w-full text-[rgba(255,255,255,0.5)] flex justify-around items-stretch font-normal gap-2 px-2 py-2.5 bg-[#373f67]"
+        >
           <li class="mainList">
-            <a href="./main.html" class="mainLink">선배님 스토리</a>
+            <a href="./main.html" class="text-sm py-1">선배님 스토리</a>
           </li>
           <li class="mainList">
-            <a href="./exchange.html" class="mainLink accentColor">기기 거래</a>
+            <a href="./exchange.html" class="text-sm text-[white] py-2 font-semibold">기기 거래</a>
           </li>
           <li class="mainList">
-            <a href="/" class="mainLink">질의 응답</a>
+            <a href="/" class="text-sm py-2">질의 응답</a>
           </li>
           <li class="mainList">
-            <a href="/" class="mainLink">함께 해요</a>
+            <a href="/" class="text-sm py-2">함께 해요</a>
           </li>
         </ul>
       </nav>
-      <h2 class="a11yHidden">기기 거래</h2>
-      <ul class="exchangeList">
-        <li class="exchangeItem">
-          <a href="productInfo.html" class="exchangeLink">
-            <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchangeImg" />
-            <div class="exchangeContent">
-              <p class="exchangeTitle">2017 mac pro</p>
-              <p class="exchangePlace">
-                마포구 신수동<span aria-hidden="true"> &middot; </span
-                ><time datetime="2023-06-25T02:29">44분전</time>
-              </p>
-              <p class="exchangeStatus">
-                <span class="exchangePromise">예약중</span>
-                <span class="exchangePrice">800,000원</span>
-              </p>
-              <p class="exchangeLike">
-                <span class="sprite spriteSmHeart"></span>
-                <span class="a11yHidden">좋아요</span>
-                <span class="likeNumber">4</span>
-              </p>
-            </div>
-          </a>
-        </li>
-        <li class="exchangeItem">
-          <a href="productInfo.html" class="exchangeLink">
-            <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchangeImg" />
-            <div class="exchangeContent">
-              <p class="exchangeTitle">2017 mac pro</p>
-              <p class="exchangePlace">
-                마포구 신수동<span aria-hidden="true"> &middot; </span
-                ><time datetime="2023-06-25T02:29">44분전</time>
-              </p>
-              <p class="exchangeStatus">
-                <span class="exchangePromise">예약중</span>
-                <span class="exchangePrice">800,000원</span>
-              </p>
-              <p class="exchangeLike">
-                <span class="sprite spriteSmHeart"></span>
-                <span class="a11yHidden">좋아요</span>
-                <span class="likeNumber">4</span>
-              </p>
-            </div>
-          </a>
-        </li>
-        <li class="exchangeItem">
-          <a href="productInfo.html" class="exchangeLink">
-            <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchangeImg" />
-            <div class="exchangeContent">
-              <p class="exchangeTitle">ipad 2세대 애플펜슬</p>
-              <p class="exchangePlace">
-                남가좌제2동<span aria-hidden="true"> &middot; </span
-                ><time datetime="2023-06-25T02:29">1일전</time>
-              </p>
-              <p class="exchangeStatus">
-                <span class="exchangeDone">거래 완료</span>
-                <span class="exchangePrice">50,000원 </span>
-              </p>
-              <p class="exchangeLike">
-                <span class="sprite spriteSmHeart"></span>
-                <span class="a11yHidden">좋아요</span>
-                <span class="likeNumber">4</span>
-              </p>
-            </div>
-          </a>
-        </li>
-        <li class="exchangeItem">
-          <a href="productInfo.html" class="exchangeLink">
-            <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchangeImg" />
-            <div class="exchangeContent">
-              <p class="exchangeTitle">2017 mac pro</p>
-              <p class="exchangePlace">
-                마포구 신수동<span aria-hidden="true"> &middot; </span
-                ><time datetime="2023-06-25T02:29">44분전</time>
-              </p>
-              <p class="exchangeStatus">
-                <span class="exchangePromise">예약중</span>
-                <span class="exchangePrice">800,000원</span>
-              </p>
-              <p class="exchangeLike">
-                <span class="sprite spriteSmHeart"></span>
-                <span class="a11yHidden">좋아요</span>
-                <span class="likeNumber">4</span>
-              </p>
-            </div>
-          </a>
-        </li>
-        <li class="exchangeItem">
-          <a href="productInfo.html" class="exchangeLink">
-            <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchangeImg" />
-            <div class="exchangeContent">
-              <p class="exchangeTitle">2017 mac pro</p>
-              <p class="exchangePlace">
-                마포구 신수동<span aria-hidden="true"> &middot; </span
-                ><time datetime="2023-06-25T02:29">44분전</time>
-              </p>
-              <p class="exchangeStatus">
-                <span class="exchangePromise">예약중</span>
-                <span class="exchangePrice">800,000원</span>
-              </p>
-              <p class="exchangeLike">
-                <span class="sprite spriteSmHeart"></span>
-                <span class="a11yHidden">좋아요</span>
-                <span class="likeNumber">4</span>
-              </p>
-            </div>
-          </a>
-        </li>
-        <li class="exchangeItem">
-          <a href="productInfo.html" class="exchangeLink">
-            <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchangeImg" />
-            <div class="exchangeContent">
-              <p class="exchangeTitle">2017 mac pro</p>
-              <p class="exchangePlace">
-                마포구 신수동<span aria-hidden="true"> &middot; </span
-                ><time datetime="2023-06-25T02:29">44분전</time>
-              </p>
-              <p class="exchangeStatus">
-                <span class="exchangePromise">예약중</span>
-                <span class="exchangePrice">800,000원</span>
-              </p>
-              <p class="exchangeLike">
-                <span class="sprite spriteSmHeart"></span>
-                <span class="a11yHidden">좋아요</span>
-                <span class="likeNumber">4</span>
-              </p>
-            </div>
-          </a>
-        </li>
-        <li class="exchangeItem">
-          <a href="productInfo.html" class="exchangeLink">
-            <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchangeImg" />
-            <div class="exchangeContent">
-              <p class="exchangeTitle">2017 mac pro</p>
-              <p class="exchangePlace">
-                마포구 신수동<span aria-hidden="true"> &middot; </span
-                ><time datetime="2023-06-25T02:29">44분전</time>
-              </p>
-              <p class="exchangeStatus">
-                <span class="exchangePromise">예약중</span>
-                <span class="exchangePrice">800,000원</span>
-              </p>
-              <p class="exchangeLike">
-                <span class="sprite spriteSmHeart"></span>
-                <span class="a11yHidden">좋아요</span>
-                <span class="likeNumber">4</span>
-              </p>
-            </div>
-          </a>
-        </li>
-        <li class="exchangeItem">
-          <a href="productInfo.html" class="exchangeLink">
-            <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchangeImg" />
-            <div class="exchangeContent">
-              <p class="exchangeTitle">2017 mac pro</p>
-              <p class="exchangePlace">
-                마포구 신수동<span aria-hidden="true"> &middot; </span
-                ><time datetime="2023-06-25T02:29">44분전</time>
-              </p>
-              <p class="exchangeStatus">
-                <span class="exchangePromise">예약중</span>
-                <span class="exchangePrice">800,000원</span>
-              </p>
-              <p class="exchangeLike">
-                <span class="sprite spriteSmHeart"></span>
-                <span class="a11yHidden">좋아요</span>
-                <span class="likeNumber">4</span>
-              </p>
-            </div>
-          </a>
-        </li>
-        <li class="exchangeItem">
-          <a href="productInfo.html" class="exchangeLink">
-            <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchangeImg" />
-            <div class="exchangeContent">
-              <p class="exchangeTitle">2017 mac pro</p>
-              <p class="exchangePlace">
-                마포구 신수동<span aria-hidden="true"> &middot; </span
-                ><time datetime="2023-06-25T02:29">44분전</time>
-              </p>
-              <p class="exchangeStatus">
-                <span class="exchangePromise">예약중</span>
-                <span class="exchangePrice">800,000원</span>
-              </p>
-              <p class="exchangeLike">
-                <span class="sprite spriteSmHeart"></span>
-                <span class="a11yHidden">좋아요</span>
-                <span class="likeNumber">4</span>
-              </p>
-            </div>
-          </a>
-        </li>
-      </ul>
-      <button onclick="location.href='/views/board/writeBoard.html' " class="plusButton">+</button>
-      <ul class="exchangeWrite">
-        <li class="writeList"><a href="/" class="writeItem">헤드셋</a></li>
-        <li class="writeList"><a href="/" class="writeItem">키보드</a></li>
-        <li class="writeList"><a href="/" class="writeItem">마우스</a></li>
-        <li class="writeList"><a href="/" class="writeItem">컴퓨터</a></li>
-        <li class="writeList"><a href="/" class="writeItem">기타 등등</a></li>
-      </ul>
+      <div class="relative w-[320px]]">
+        <h2 class="a11yHidden">기기 거래</h2>
+        <ul class="flex overflow-y-scroll flex-col flex-nowrap relative">
+          <li class="flex">
+            <a
+              href="productInfo.html"
+              class="relative flex w-full gap-3 p-3 border-b-[#bdbdbd] border-b border-solid"
+            >
+              <img
+                src="./../../assets/images/equipmentBg.png"
+                alt="중고거래 상품"
+                class="w-[90px] h-[90px] bg-[]"
+              />
+              <div class="flex w-full gap-1 flex-1 pt-3 flex-col">
+                <p class="text-sm">2017 mac pro</p>
+                <p class="text-[0.625rem] text-[#9da184] mt-0.5">
+                  마포구 신수동<span aria-hidden="true"> &middot; </span
+                  ><time datetime="2023-06-25T02:29">44분전</time>
+                </p>
+                <p class="mt-1">
+                  <span
+                    class="bg-[#719cf7] text-white text-[0.625rem] font-normal leading-[1.6] mr-1 mb-2.5 px-1.5 py-1 rounded-[0.3125rem]"
+                    >예약중</span
+                  >
+                  <span class="inline-block align-middle text-sm font-semibold pt-1"
+                    >800,000원</span
+                  >
+                </p>
+                <p class="absolute text-[10px] right-2.5 bottom-[5px]">
+                  <span
+                    class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-190px_-85px] transform translate-x-0.5 translate-y-2.5"
+                  ></span>
+                  <span class="a11yHidden">좋아요</span>
+                  <span class="inline-block pl-0.5 pr-1 pt-0.5 pb-0">4</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="flex">
+            <a
+              href="productInfo.html"
+              class="relative flex w-full gap-3 p-3 border-b-[#bdbdbd] border-b border-solid"
+            >
+              <img
+                src="./../../assets/images/equipmentBg.png"
+                alt="중고거래 상품"
+                class="w-[90px] h-[90px] bg-[]"
+              />
+              <div class="flex w-full gap-1 flex-1 pt-3 flex-col">
+                <p class="text-sm">2017 mac pro</p>
+                <p class="text-[0.625rem] text-[#9da184] mt-0.5">
+                  마포구 신수동<span aria-hidden="true"> &middot; </span
+                  ><time datetime="2023-06-25T02:29">44분전</time>
+                </p>
+                <p class="mt-1">
+                  <span
+                    class="bg-[#719cf7] text-white text-[0.625rem] font-normal leading-[1.6] mr-1 mb-2.5 px-1.5 py-1 rounded-[0.3125rem]"
+                    >예약중</span
+                  >
+                  <span class="inline-block align-middle text-sm font-semibold pt-1"
+                    >800,000원</span
+                  >
+                </p>
+                <p class="absolute text-[10px] right-2.5 bottom-[5px]">
+                  <span
+                    class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-190px_-85px] transform translate-x-0.5 translate-y-2.5"
+                  ></span>
+                  <span class="a11yHidden">좋아요</span>
+                  <span class="inline-block pl-0.5 pr-1 pt-0.5 pb-0">4</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="flex">
+            <a
+              href="productInfo.html"
+              class="relative flex w-full gap-3 p-3 border-b-[#bdbdbd] border-b border-solid"
+            >
+              <img
+                src="./../../assets/images/equipmentBg.png"
+                alt="중고거래 상품"
+                class="w-[90px] h-[90px] bg-[]"
+              />
+              <div class="flex w-full gap-1 flex-1 pt-3 flex-col">
+                <p class="text-sm">ipad 2세대 애플펜슬</p>
+                <p class="text-[0.625rem] text-[#9da184] mt-0.5">
+                  남가좌제2동<span aria-hidden="true"> &middot; </span
+                  ><time datetime="2023-06-25T02:29">1일전</time>
+                </p>
+                <p class="mt-1">
+                  <span
+                    class="bg-[#9da1b4] text-white text-[0.625rem] font-semibold leading-normal mr-1 mb-2.5 px-1.5 py-1 rounded-[0.3125rem]"
+                    >거래 완료</span
+                  >
+                  <span class="inline-block align-middle text-sm font-semibold pt-1"
+                    >50,000원
+                  </span>
+                </p>
+                <p class="absolute text-[10px] right-2.5 bottom-[5px]">
+                  <span
+                    class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-190px_-85px] transform translate-x-0.5 translate-y-2.5"
+                  ></span>
+                  <span class="a11yHidden">좋아요</span>
+                  <span class="inline-block pl-0.5 pr-1 pt-0.5 pb-0">4</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="flex">
+            <a
+              href="productInfo.html"
+              class="relative flex w-full gap-3 p-3 border-b-[#bdbdbd] border-b border-solid"
+            >
+              <img
+                src="./../../assets/images/equipmentBg.png"
+                alt="중고거래 상품"
+                class="w-[90px] h-[90px] bg-[]"
+              />
+              <div class="flex w-full gap-1 flex-1 pt-3 flex-col">
+                <p class="text-sm">2017 mac pro</p>
+                <p class="text-[0.625rem] text-[#9da184] mt-0.5">
+                  마포구 신수동<span aria-hidden="true"> &middot; </span
+                  ><time datetime="2023-06-25T02:29">44분전</time>
+                </p>
+                <p class="mt-1">
+                  <span
+                    class="bg-[#719cf7] text-white text-[0.625rem] font-normal leading-[1.6] mr-1 mb-2.5 px-1.5 py-1 rounded-[0.3125rem]"
+                    >예약중</span
+                  >
+                  <span class="inline-block align-middle text-sm font-semibold pt-1"
+                    >800,000원</span
+                  >
+                </p>
+                <p class="absolute text-[10px] right-2.5 bottom-[5px]">
+                  <span
+                    class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-190px_-85px] transform translate-x-0.5 translate-y-2.5"
+                  ></span>
+                  <span class="a11yHidden">좋아요</span>
+                  <span class="inline-block pl-0.5 pr-1 pt-0.5 pb-0">4</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="flex">
+            <a
+              href="productInfo.html"
+              class="relative flex w-full gap-3 p-3 border-b-[#bdbdbd] border-b border-solid"
+            >
+              <img
+                src="./../../assets/images/equipmentBg.png"
+                alt="중고거래 상품"
+                class="w-[90px] h-[90px] bg-[]"
+              />
+              <div class="flex w-full gap-1 flex-1 pt-3 flex-col">
+                <p class="text-sm">2017 mac pro</p>
+                <p class="text-[0.625rem] text-[#9da184] mt-0.5">
+                  마포구 신수동<span aria-hidden="true"> &middot; </span
+                  ><time datetime="2023-06-25T02:29">44분전</time>
+                </p>
+                <p class="mt-1">
+                  <span
+                    class="bg-[#719cf7] text-white text-[0.625rem] font-normal leading-[1.6] mr-1 mb-2.5 px-1.5 py-1 rounded-[0.3125rem]"
+                    >예약중</span
+                  >
+                  <span class="inline-block align-middle text-sm font-semibold pt-1"
+                    >800,000원</span
+                  >
+                </p>
+                <p class="absolute text-[10px] right-2.5 bottom-[5px]">
+                  <span
+                    class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-190px_-85px] transform translate-x-0.5 translate-y-2.5"
+                  ></span>
+                  <span class="a11yHidden">좋아요</span>
+                  <span class="inline-block pl-0.5 pr-1 pt-0.5 pb-0">4</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="flex">
+            <a
+              href="productInfo.html"
+              class="relative flex w-full gap-3 p-3 border-b-[#bdbdbd] border-b border-solid"
+            >
+              <img
+                src="./../../assets/images/equipmentBg.png"
+                alt="중고거래 상품"
+                class="w-[90px] h-[90px] bg-[]"
+              />
+              <div class="flex w-full gap-1 flex-1 pt-3 flex-col">
+                <p class="text-sm">2017 mac pro</p>
+                <p class="text-[0.625rem] text-[#9da184] mt-0.5">
+                  마포구 신수동<span aria-hidden="true"> &middot; </span
+                  ><time datetime="2023-06-25T02:29">44분전</time>
+                </p>
+                <p class="mt-1">
+                  <span
+                    class="bg-[#719cf7] text-white text-[0.625rem] font-normal leading-[1.6] mr-1 mb-2.5 px-1.5 py-1 rounded-[0.3125rem]"
+                    >예약중</span
+                  >
+                  <span class="inline-block align-middle text-sm font-semibold pt-1"
+                    >800,000원</span
+                  >
+                </p>
+                <p class="absolute text-[10px] right-2.5 bottom-[5px]">
+                  <span
+                    class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-190px_-85px] transform translate-x-0.5 translate-y-2.5"
+                  ></span>
+                  <span class="a11yHidden">좋아요</span>
+                  <span class="inline-block pl-0.5 pr-1 pt-0.5 pb-0">4</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="flex">
+            <a
+              href="productInfo.html"
+              class="relative flex w-full gap-3 p-3 border-b-[#bdbdbd] border-b border-solid"
+            >
+              <img
+                src="./../../assets/images/equipmentBg.png"
+                alt="중고거래 상품"
+                class="w-[90px] h-[90px] bg-[]"
+              />
+              <div class="flex w-full gap-1 flex-1 pt-3 flex-col">
+                <p class="text-sm">2017 mac pro</p>
+                <p class="text-[0.625rem] text-[#9da184] mt-0.5">
+                  마포구 신수동<span aria-hidden="true"> &middot; </span
+                  ><time datetime="2023-06-25T02:29">44분전</time>
+                </p>
+                <p class="mt-1">
+                  <span
+                    class="bg-[#719cf7] text-white text-[0.625rem] font-normal leading-[1.6] mr-1 mb-2.5 px-1.5 py-1 rounded-[0.3125rem]"
+                    >예약중</span
+                  >
+                  <span class="inline-block align-middle text-sm font-semibold pt-1"
+                    >800,000원</span
+                  >
+                </p>
+                <p class="absolute text-[10px] right-2.5 bottom-[5px]">
+                  <span
+                    class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-190px_-85px] transform translate-x-0.5 translate-y-2.5"
+                  ></span>
+                  <span class="a11yHidden">좋아요</span>
+                  <span class="inline-block pl-0.5 pr-1 pt-0.5 pb-0">4</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="flex">
+            <a
+              href="productInfo.html"
+              class="relative flex w-full gap-3 p-3 border-b-[#bdbdbd] border-b border-solid"
+            >
+              <img
+                src="./../../assets/images/equipmentBg.png"
+                alt="중고거래 상품"
+                class="w-[90px] h-[90px] bg-[]"
+              />
+              <div class="flex w-full gap-1 flex-1 pt-3 flex-col">
+                <p class="text-sm">2017 mac pro</p>
+                <p class="text-[0.625rem] text-[#9da184] mt-0.5">
+                  마포구 신수동<span aria-hidden="true"> &middot; </span
+                  ><time datetime="2023-06-25T02:29">44분전</time>
+                </p>
+                <p class="mt-1">
+                  <span
+                    class="bg-[#719cf7] text-white text-[0.625rem] font-normal leading-[1.6] mr-1 mb-2.5 px-1.5 py-1 rounded-[0.3125rem]"
+                    >예약중</span
+                  >
+                  <span class="inline-block align-middle text-sm font-semibold pt-1"
+                    >800,000원</span
+                  >
+                </p>
+                <p class="absolute text-[10px] right-2.5 bottom-[5px]">
+                  <span
+                    class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-190px_-85px] transform translate-x-0.5 translate-y-2.5"
+                  ></span>
+                  <span class="a11yHidden">좋아요</span>
+                  <span class="inline-block pl-0.5 pr-1 pt-0.5 pb-0">4</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="flex">
+            <a
+              href="productInfo.html"
+              class="relative flex w-full gap-3 p-3 border-b-[#bdbdbd] border-b border-solid"
+            >
+              <img
+                src="./../../assets/images/equipmentBg.png"
+                alt="중고거래 상품"
+                class="w-[90px] h-[90px] bg-[]"
+              />
+              <div class="flex w-full gap-1 flex-1 pt-3 flex-col">
+                <p class="text-sm">2017 mac pro</p>
+                <p class="text-[0.625rem] text-[#9da184] mt-0.5">
+                  마포구 신수동<span aria-hidden="true"> &middot; </span
+                  ><time datetime="2023-06-25T02:29">44분전</time>
+                </p>
+                <p class="mt-1">
+                  <span
+                    class="bg-[#719cf7] text-white text-[0.625rem] font-normal leading-[1.6] mr-1 mb-2.5 px-1.5 py-1 rounded-[0.3125rem]"
+                    >예약중</span
+                  >
+                  <span class="inline-block align-middle text-sm font-semibold pt-1"
+                    >800,000원</span
+                  >
+                </p>
+                <p class="absolute text-[10px] right-2.5 bottom-[5px]">
+                  <span
+                    class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-190px_-85px] transform translate-x-0.5 translate-y-2.5"
+                  ></span>
+                  <span class="a11yHidden">좋아요</span>
+                  <span class="inline-block pl-0.5 pr-1 pt-0.5 pb-0">4</span>
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <button
+          onclick="location.href='/views/board/writeBoard.html' "
+          class="plusButton flex items-center justify-center w-12 h-12 fixed bg-[#373f67] z-10 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] p-2 rounded-[50%] border-[none] right-[55px] bottom-[85px] hover:bg-white hover:text-[black] hover:shadow-[2px_4px_4px_2px_rgba(0,0,0,0.25)]"
+        >
+          <span class="inline-block text-white text-[2rem] mb-1">+</span>
+        </button>
+        <ul
+          class="exchangeWrite invisible opacity-0 fixed flex gap-3 right-[50px] bottom-[145px] flex-col"
+        >
+          <li class="w-[105px] bg-[#373f67] px-2 py-2.5 rounded-xl">
+            <a href="/" class="text-[white] text-sm font-medium flex justify-center gap-[3px]"
+              ><span class="">🎧</span><span class="">헤드셋</span></a
+            >
+          </li>
+          <li class="w-[105px] bg-[#373f67] px-2 py-2.5 rounded-xl">
+            <a href="/" class="text-[white] text-sm font-medium flex justify-center gap-[3px]"
+              ><span>⌨️</span><span>키보드</span></a
+            >
+          </li>
+          <li class="w-[105px] bg-[#373f67] px-2 py-2.5 rounded-xl">
+            <a href="/" class="text-[white] text-sm font-medium flex justify-center gap-[3px]"
+              ><span>🖱️</span><span>마우스</span></a
+            >
+          </li>
+          <li class="w-[105px] bg-[#373f67] px-2 py-2.5 rounded-xl">
+            <a href="/" class="text-[white] text-sm font-medium flex justify-center gap-[3px]"
+              ><span>💻</span><span>컴퓨터</span></a
+            >
+          </li>
+          <li class="w-[105px] bg-[#373f67] px-2 py-2.5 rounded-xl">
+            <a href="/" class="text-[white] text-sm font-medium flex justify-center gap-[3px]"
+              ><span>🎈</span><span>기타 등등</span></a
+            >
+          </li>
+        </ul>
+      </div>
     </main>
   </body>
 </html>
