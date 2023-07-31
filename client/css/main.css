@@ -592,6 +592,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-64 {
+  bottom: 16rem;
+}
+
 .bottom-\[145px\] {
   bottom: 145px;
 }
@@ -694,42 +698,6 @@ video {
 
 .top-\[85px\] {
   top: 85px;
-}
-
-.bottom-1 {
-  bottom: 0.25rem;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.bottom-40 {
-  bottom: 10rem;
-}
-
-.bottom-36 {
-  bottom: 9rem;
-}
-
-.bottom-60 {
-  bottom: 15rem;
-}
-
-.bottom-56 {
-  bottom: 14rem;
-}
-
-.bottom-48 {
-  bottom: 12rem;
-}
-
-.bottom-72 {
-  bottom: 18rem;
-}
-
-.bottom-64 {
-  bottom: 16rem;
 }
 
 .z-10 {
@@ -851,6 +819,10 @@ video {
 
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
 }
 
 .ml-3 {
@@ -977,6 +949,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -1011,50 +987,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.mt-60 {
-  margin-top: 15rem;
-}
-
-.mt-72 {
-  margin-top: 18rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.ml-20 {
-  margin-left: 5rem;
-}
-
-.ml-24 {
-  margin-left: 6rem;
-}
-
-.ml-6 {
-  margin-left: 1.5rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
-}
-
-.ml-7 {
-  margin-left: 1.75rem;
 }
 
 .box-border {
@@ -1278,10 +1210,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-7 {
-  height: 1.75rem;
 }
 
 .max-h-\[60px\] {
@@ -2032,10 +1960,6 @@ video {
   background-image: url('../../assets/icons/icon/board_plusIcon');
 }
 
-.bg-\[url\(\'\.\/\.\.\/\.\.\/assets\/bacon\/dircetionLeft\.svg\'\)\] {
-  background-image: url('./../../assets/bacon/dircetionLeft.svg');
-}
-
 .bg-\[url\(\'\.\/\.\.\/\.\.\/assets\/icons\/Icon\/board_borderplusIcon\.png\'\)\] {
   background-image: url('./../../assets/icons/Icon/board_borderplusIcon.png');
 }
@@ -2062,14 +1986,6 @@ video {
 
 .bg-\[url\(\'\.\/\.\.\/\.\.\/assets\/icons\/sprite\.svg\'\)\] {
   background-image: url('./../../assets/icons/sprite.svg');
-}
-
-.bg-\[url\(\'\.\/\.\.\/\.\.\/assets\/images\/main\/iOS\.svg\'\)\] {
-  background-image: url('./../../assets/images/main/iOS.svg');
-}
-
-.bg-\[url\(\'\.\/\.\.\/\.\.\/assets\/images\/main\/rectangle\.svg\'\)\] {
-  background-image: url('./../../assets/images/main/rectangle.svg');
 }
 
 .bg-\[-106px_-90px\] {
@@ -2130,6 +2046,10 @@ video {
 
 .bg-\[-228px_-254px\] {
   background-position: -228px -254px;
+}
+
+.bg-\[-234px_-163px\] {
+  background-position: -234px -163px;
 }
 
 .bg-\[-238px_-197px\] {
@@ -2246,14 +2166,6 @@ video {
 
 .bg-center {
   background-position: center;
-}
-
-.bg-\[-152px_-98px\] {
-  background-position: -152px -98px;
-}
-
-.bg-\[-234px_-163px\] {
-  background-position: -234px -163px;
 }
 
 .bg-no-repeat {
@@ -2485,6 +2397,10 @@ video {
   padding-left: 1rem;
 }
 
+.pl-48 {
+  padding-left: 12rem;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -2577,18 +2493,6 @@ video {
   padding-top: 3.75rem;
 }
 
-.pl-72 {
-  padding-left: 18rem;
-}
-
-.pl-52 {
-  padding-left: 13rem;
-}
-
-.pl-48 {
-  padding-left: 12rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -2669,6 +2573,10 @@ video {
   font-size: 1.1875rem;
 }
 
+.text-\[16px\] {
+  font-size: 16px;
+}
+
 .text-\[1rem\] {
   font-size: 1rem;
 }
@@ -2699,10 +2607,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[16px\] {
-  font-size: 16px;
 }
 
 .font-\[400\] {
