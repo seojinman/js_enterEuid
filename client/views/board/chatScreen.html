@@ -16,37 +16,77 @@
   </head>
 
   <body>
-    <div
-      class="outer px-3 w-80 h-[763px] -translate-x-2/4 -translate-y-2/4 absolute bg-yellow-200 left-2/4 top-2/4 overflow-hidden"
-    >
-    <header class="">
-      <div
-      class="backBar flex flex-nowrap flex-row py-2 h-[36px] bg-pink-500 items-stretch justify-between"
-      >
-      <div class=""><img src="/" class="left-[12px] absolute" alt="/" tabindex="0" /></div>
-      <h2 class="subjectTitle text-sm">EUID 피그마 스터디 하실 분 ~</h2>
-          <div class="">
-            <img src="/" role="button" alt="더보기" tabindex="0" />
+    <header>
+      <h2 class="sr-only">기본 정보</h2>
+      <div class="flex justify-between items-center pt-2 px-4">
+        <time class="inline-block text-sm font-semibold" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="flex justify-start items-start border-0">
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"
+            ></span>
+            <span class="sr-only">수신감도</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"
+            ></span>
+            <span class="sr-only">데이터 종류</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"
+            ></span>
+            <span class="sr-only">배터리 잔량</span>
+          </li>
+        </ul>
+      </header>
+
+      <main class="px-3 pb-0 w-80">
+        <div class="flex flex-nowrap flex-row items-stretch justify-between">
+          <div
+            class="py-3 my-4 bg-[url('../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-98px]"
+          ></div>
+          
+          <h2 class="subjectTitle py-4 pl-3 text-sm">EUID 피그마 스터디 하실 분 ~ <span class="font-semibold text-[rosybrown]">1</span></h2>
+          
+
+          <div class="my-2.5 pr-1">
+            <div
+              class="inline-block my-4 bg-[url('../../assets/icons/Icon/board_hamburgerIcon.png')] bg-no-repeat w-5 h-5 ml-[0.1875rem] mt-0.5"
+            ></div>
           </div>
+
+
         </div>
-      
-      <div class="chatContainer fixed bottom-0 inset-x-0 bg-pink-300 pt-2 pb-6 px-3 box-border">
-        <section class="chatContents flex justify-start items-center w-full bottom-[1.875rem] flex-row flex-nowrap 
-        ">
-          <div class="moreContents "><img src="/" alt="/" /></div>
-          <div class="chatInput">
-            <div class="chatInputContainer">
-              <form class="">
-                <label for="chatSend"></label>
-                <input class="h-[38px] text-sm leading-[160%] grow-[2] px-3 py-2 rounded-[20px] border-[none]" type="text" id="chatSend" placeholder="메시지 보내기" />
-                <button type="submit" class="send" data-name="send">
-                  <span class="chatSendSprite"></span>
-                </button>
-              </form>
-            </div>
-          </div>
-        </section>
+
+        
+        
       </div>
     </div>
+    <div class="chatContainer w-full h-full bg-yellow-300">
+
+
+
+    </div>
+  </main>
+  <section class="chatContents fixed flex justify-start items-center w-80 h- bottom-0 flex-row flex-nowrap bg-pink-300
+  ">
+    <div class="w-full flex justify-start items-center  bottom-0 flex-row flex-nowrap  ">
+      <div class="moreContents "><img src="/" alt="/" /></div>
+      <div class="chatInput">
+        <div class="chatInputContainer">
+          <form class="">
+            <label for="chatSend"></label>
+            <input class="h-[38px] text-sm leading-[160%] grow-[2] px-3 py-2 rounded-[20px] border-[none]" type="text" id="chatSend" placeholder="메시지 보내기" />
+            <button type="submit" class="send" data-name="send">
+              <span class="chatSendSprite"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
   </body>
 </html>

@@ -16,47 +16,110 @@
   </head>
 
   <body>
+    <header>
+      <h2 class="sr-only">기본 정보</h2>
+      <div class="flex justify-between items-center pt-2 px-4">
+        <time class="inline-block text-sm font-semibold" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="flex justify-start items-start border-0">
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"
+            ></span>
+            <span class="sr-only">수신감도</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"
+            ></span>
+            <span class="sr-only">데이터 종류</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"
+            ></span>
+            <span class="sr-only">배터리 잔량</span>
+          </li>
+        </ul>
+      </div>
+    </header>
     <div
-      class="outer w-80 h-[763px] -translate-x-2/4 -translate-y-2/4 absolute bg-[red] left-2/4 top-2/4 overflow-hidden"
+      class="outer w-80 -translate-x-2/4 -translate-y-2/4 absolute left-2/4 top-2/4 overflow-hidden"
     >
-      <header class="fixed top-0 inset-x-0 bg-pink-900">
+      <section class="absolute inset-x-0">
         <div
-          class="backBar flex flex-nowrap flex-row px-3 h-[36px] bg-pink-500 items-center justify-center"
-        >
-          <img src="/" class="left-[12px] absolute" alt="뒤로가기" tabindex="0" />
+          class="absolute left-5 top-2 bg-[url('../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-98px]"
+        ></div>
+        <div class="backBar flex flex-nowrap flex-row px-3 h-[36px] items-center justify-center">
           <h2 class="subjectTitle">같이해요</h2>
         </div>
-        <nav class="subjectTogetherNav bg-gray-400 text-[0.625rem] font-semibold h-[91px] relative">
+        <div class="subjectTogetherdiv text-[0.625rem] font-semibold h-[70px]">
           <div
-            class="flex justify-start items-stretch w-full text-center text-[0.66rem] flex-row flex-nowrap bg-yellow-400 pl-5 py-2 absolute -translate-x-2/4 -translate-y-2/4 left-2/4 box-border top-2/4"
+            class="flex justify-start items-stretch w-full text-center text-[0.66rem] flex-row flex-nowrap pl-5 absolute -translate-x-2/4 -translate-y-2/4 left-2/4 box-border top-2/4"
           >
-            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] bg-purple-300 mr-3">
-              <img src="/" class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]" alt="/" />
-              <figcaption class="bg-blue-500 mt-[6px]">전체</figcaption>
+            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] mr-3">
+              <div
+                role="button"
+                class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]"
+                aria-label="전체"
+              >
+                <span class="text-xl">🙌</span>
+              </div>
+              <figcaption class="mt-[0.1875rem]">전체</figcaption>
             </figure>
-            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] bg-purple-300 mr-3">
-              <img src="/" class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]" alt="/" />
-              <figcaption class="bg-blue-500 mt-[6px]">스터디</figcaption>
+            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] mr-3">
+              <div
+                role="button"
+                class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]"
+                aria-label="스터디"
+              >
+                <span class="text-xl">📝 </span>
+              </div>
+
+              <figcaption class="mt-[0.1875rem]">스터디</figcaption>
             </figure>
-            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] bg-purple-300 mr-3">
-              <img src="/" class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]" alt="/" />
-              <figcaption class="bg-blue-500 mt-[6px]">프로젝트</figcaption>
+            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] mr-3">
+              <div
+                role="button"
+                class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]"
+                aria-label="프로젝트"
+              >
+                <span class="text-xl">💻 </span>
+              </div>
+              <figcaption class="mt-[0.1875rem]">프로젝트</figcaption>
             </figure>
-            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] bg-purple-300 mr-3">
-              <img src="/" class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]" alt="/" />
-              <figcaption class="bg-blue-500 mt-[6px]">오프라인</figcaption>
+            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] mr-3">
+              <div
+                role="button"
+                class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]"
+                aria-label="오프라인"
+              >
+                <span class="text-xl">⚡️</span>
+              </div>
+              <figcaption class="mt-[0.1875rem]">오프라인</figcaption>
             </figure>
-            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] bg-purple-300 mr-3">
-              <img src="/" class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]" alt="/" />
-              <figcaption class="bg-blue-500 mt-[6px]">공모전</figcaption>
+            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] mr-3">
+              <div
+                role="button"
+                class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]"
+                aria-label="공모전"
+              >
+                <span class="text-xl">🏆</span>
+              </div>
+              <figcaption class="mt-[0.1875rem]">공모전</figcaption>
             </figure>
-            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] bg-purple-300 mr-3">
-              <img src="/" class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]" alt="/" />
-              <figcaption class="bg-blue-500 mt-[6px]">이력서</figcaption>
+            <figure tabindex="0" class="flex-shrink-0 w-[54px] h-[75px] mr-3">
+              <div
+                role="button"
+                class="bg-[#e9e9e9] p-3.5 h-[54px] rounded-[50px]"
+                aria-label="이력서"
+              >
+                <span class="text-xl">📄</span>
+              </div>
+              <figcaption class="mt-[0.1875rem]">이력서</figcaption>
             </figure>
           </div>
-        </nav>
-        <div class="subjectTogetherSort bg-blue-200">
+        </div>
+        <div class="subjectTogetherSort pt-5 border-b-[0.01875rem] border-b-[#919191] border-solid">
           <button
             class="subjectTogetherSortRecent ml-3.5 mr-auto mt-2 mb-3 border text-[0.66rem] bg-transparent no-underline cursor-pointer px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
           >
@@ -68,84 +131,316 @@
             모집 중인 글만
           </button>
         </div>
-      </header>
-      <main class="bg-yellow-700 mt-[11rem]">
+      </section>
+
+      <main class="mt-[12rem]">
         <section
-          class="togetherSection boardSection box-border p-3 flex justify-between items-stretch flex-nowrap flex-row"
+          class="togetherSection boardSection box-border p-3 flex justify-between items-stretch flex-nowrap flex-row border-b-[0.01875rem] border-b-[#919191] border-solid"
         >
           <div class="togetherContainer w-[190px]">
-            <p><span class="togetherRecruit">모집중</span> • 스터디 • 연남동</p>
-            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block">
+            <p class="text-[#9DA1B4] text-[0.625rem] font-[400]">
+              <span class="togetherRecruit text-[#5A85EE]">모집중</span> • 스터디 • 연남동
+            </p>
+            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block text-sm">
               <a href="#">EUID 피그마 스터디 하실분~ </a>
             </h3>
-            <p class="boardPeople">
-              <span class="boardHumanSprite" aria-hidden="true"></span>
+            <p
+              class="boardPeople flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
+            >
+              <img
+                src="../../assets/icons/Icon/board_fullpeopleIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="누구나 참여가능"
+              />
               누구나 참여가능
             </p>
-            <p><span class="calenderSprite" aria-hidden="true"></span> 오늘, 오후 7:00</p>
-            <p class=""><span class="togetherPeople"></span> 1/4명</p>
+
+            <p
+              class="boardPeople flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
+            >
+              <img
+                src="../../assets/icons/Icon/board_calenderIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="달력"
+              />
+              오늘, 오후 7:00
+            </p>
+            <p
+              class="boardPeople flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
+            >
+              <img
+                src="../../assets/icons/Icon/board_scircleIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="달력"
+              />
+              1/4명
+            </p>
           </div>
-          <p class="togetherWhen ml-auto mr-0 mt-auto mb-0">35분 전</p>
+          <p
+            class="togetherWhen ml-auto mr-0 mt-auto mb-0 text-[#9DA1B4] text-[0.625rem] font-[400]"
+          >
+            35분 전
+          </p>
         </section>
         <section
-          class="togetherSection boardSection box-border p-3 flex justify-between items-stretch flex-nowrap flex-row"
+          class="togetherSection boardSection box-border p-3 flex justify-between items-stretch flex-nowrap flex-row border-b-[0.01875rem] border-b-[#919191] border-solid"
         >
           <div class="togetherContainer w-[190px]">
-            <p>모집종료 • 프로젝트 • 남가좌제2동</p>
-            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block">
+            <p class="text-[#9DA1B4] text-[0.625rem] font-[400]">
+              모집종료 • 프로젝트 • 남가좌제2동
+            </p>
+            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block text-sm">
               <a href="#">엔터이듬 클론 프로젝트 오프라인으로다가 하실분 구함</a>
             </h3>
-            <p><span class="boardHumanSprite"></span> 25-35세 | 여자만 가능</p>
-            <p><span class="calenderSprite"></span> 5월1일 -14일, 오후 4:00</p>
-            <p class=""><span class="togetherPeople"></span> 4/4명</p>
+            <p
+              class="boardPeople flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
+            >
+              <img
+                src="../../assets/icons/Icon/board_fullpeopleIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="누구나 참여가능"
+              />25-35세 | 여자만 가능
+            </p>
+            <p
+              class="boardPeople flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
+            >
+              <img
+                src="../../assets/icons/Icon/board_calenderIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="달력"
+              />
+              5월1일 -14일, 오후 4:00
+            </p>
+            <p
+              class="flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
+            >
+              <img
+                src="../../assets/icons/Icon/board_scircleIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="현재 모집 상황"
+              />
+              4/4명
+            </p>
           </div>
-          <p class="togetherWhen ml-auto mr-0 mt-auto mb-0">5분 전</p>
+          <p
+            class="togetherWhen ml-auto mr-0 mt-auto mb-0 text-[#9DA1B4] text-[0.625rem] font-[400]"
+          >
+            5분 전
+          </p>
         </section>
         <section
-          class="togetherSection boardSection box-border p-3 flex justify-between items-stretch flex-nowrap flex-row"
+          class="togetherSection boardSection box-border p-3 flex justify-between items-stretch flex-nowrap flex-row border-b-[0.01875rem] border-b-[#919191] border-solid"
         >
           <div class="togetherContainer w-[190px]">
-            <p>모집종료 • 스터디 • 연남동</p>
-            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block">
-              <a href="#">알고리즘 매일 아침마다 인증할 분</a>
+            <p class="text-[#9DA1B4] text-[0.625rem] font-[400]">모집종료 • 스터디 • 연남동</p>
+            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block text-sm">
+              <a href="#">알고리즘 매일 아침마다 인증할 분 구합니다</a>
             </h3>
-            <p><span class="boardHumanSprite"></span> 누구나 참여 가능</p>
-            <p><span class="calenderSprite"></span> 5월 1일, 오전 10:00</p>
-            <p class=""><span class="togetherPeople"></span> 4/4명</p>
+            <p
+              class="boardPeople flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
+            >
+              <img
+                src="../../assets/icons/Icon/board_fullpeopleIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="누구나 참여가능"
+              />
+              누구나 참여 가능
+            </p>
+            <p
+              class="boardPeople flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
+            >
+              <img
+                src="../../assets/icons/Icon/board_calenderIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="달력"
+              />
+              5월 1일, 오전 10:00
+            </p>
+            <p
+              class="boardPeople flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
+            >
+              <img
+                src="../../assets/icons/Icon/board_scircleIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="현재 모집 상황"
+              />
+              4/4명
+            </p>
           </div>
-          <p class="togetherWhen ml-auto mr-0 mt-auto mb-0">7일 전</p>
+          <p
+            class="togetherWhen ml-auto mr-0 mt-auto mb-0 text-[#9DA1B4] text-[0.625rem] font-[400]"
+          >
+            7일 전
+          </p>
         </section>
         <section
-          class="togetherSection boardSection box-border p-3 flex justify-between items-stretch flex-nowrap flex-row"
+          class="togetherSection boardSection box-border p-3 flex justify-between items-stretch flex-nowrap flex-row border-b-[0.01875rem] border-b-[#919191] border-solid"
         >
           <div class="togetherContainer w-[190px]">
-            <p><span class="togetherRecruit">모집중</span> • 스터디 • 연남동</p>
-            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block">
+            <p class="text-[#9DA1B4] text-[0.625rem] font-[400]">
+              <span class="togetherRecruit text-[#5A85EE]">모집중</span> • 스터디 • 연남동
+            </p>
+            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block text-sm">
               <a href="#">멋사플레이스 클론 코딩 스터디 하실분 제발와줘</a>
             </h3>
-            <p><span class="boardHumanSprite"></span> 누구나 참여 가능</p>
-            <p><span class="calenderSprite"></span> 오늘, 오후 7:00</p>
-            <p class=""><span class="togetherPeople"></span> 1/4명</p>
+            <p
+              class="boardPeople flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
+            >
+              <img
+                src="../../assets/icons/Icon/board_fullpeopleIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="누구나 참여가능"
+              />25 누구나 참여 가능
+            </p>
+
+            <p
+              class="boardPeople flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
+            >
+              <img
+                src="../../assets/icons/Icon/board_calenderIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="달력"
+              />
+              오늘, 오후 7:00
+            </p>
+            <p
+              class="boardPeople flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
+            >
+              <img
+                src="../../assets/icons/Icon/board_scircleIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="현재 모집 상황"
+              />
+              1/4명
+            </p>
           </div>
-          <p class="togetherWhen ml-auto mr-0 mt-auto mb-0">35분 전</p>
+          <p
+            class="togetherWhen ml-auto mr-0 mt-auto mb-0 text-[#9DA1B4] text-[0.625rem] font-[400]"
+          >
+            35분 전
+          </p>
+        </section>
+        <section
+          class="togetherSection boardSection box-border p-3 flex justify-between items-stretch flex-nowrap flex-row border-b-[0.01875rem] border-b-[#919191] border-solid"
+        >
+          <div class="togetherContainer w-[190px]">
+            <p class="text-[#9DA1B4] text-[0.625rem] font-[400]">
+              <span class="togetherRecruit text-[#5A85EE]">모집중</span> • 스터디 • 연남동
+            </p>
+            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block text-sm">
+              <a href="#">멋사플레이스 클론 코딩 스터디 하실분 제발와줘</a>
+            </h3>
+            <p
+              class="boardPeople flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
+            >
+              <img
+                src="../../assets/icons/Icon/board_fullpeopleIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="누구나 참여가능"
+              />25 누구나 참여 가능
+            </p>
+
+            <p
+              class="boardPeople flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
+            >
+              <img
+                src="../../assets/icons/Icon/board_calenderIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="달력"
+              />
+              오늘, 오후 7:00
+            </p>
+            <p
+              class="boardPeople flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
+            >
+              <img
+                src="../../assets/icons/Icon/board_scircleIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="현재 모집 상황"
+              />
+              1/4명
+            </p>
+          </div>
+          <p
+            class="togetherWhen ml-auto mr-0 mt-auto mb-0 text-[#9DA1B4] text-[0.625rem] font-[400]"
+          >
+            35분 전
+          </p>
         </section>
       </main>
 
       <button
         class="fixed inline-block h-12 w-12 text-white bg-[#373F67] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] z-[2] p-2.5 rounded-[50%] right-3 bottom-[6.375rem]"
         aria-label="글 작성하기"
-      ></button>
-      <footer
-        class="footer h-[37px] fixed bottom-0 inset-x-0 bg-pink-300 pt-2 pb-6 px-3 box-border"
       >
-        <div class="footerWrap flex items-stretch flex-nowrap flex-row justify-between">
-          <button class="buttonHome w-[20px] h-[37px]"><img src="/" alt="/" />홈</button>
-          <button class="buttonBoard w-[20px] h-[37px]"><img src="/" alt="/" />게시판</button>
-          <button class="buttonLocation w-[20px] h-[37px]"><img src="/" alt="/" />내주변</button>
-          <button class="buttonChat w-[20px] h-[37px]"><img src="/" alt="/" />채팅</button>
-          <button class="buttonMy w-[20px] h-[37px]"><img src="/" alt="/" />나의 이듬</button>
-        </div>
-      </footer>
+        <div
+          class="bg-[url('../../assets/icons/icon/board_plusIcon')] bg-no-repeat bg-[center_center]"
+        ></div>
+      </button>
     </div>
+    <nav
+      class="bottomNav bg-white sticky min-w-xs max-w-xs border-r-2 border-r-[rgb(214,214,214)] border-solid bottom-0 border shadow-md rounded-t-lg z-10 b"
+    >
+      <h2 class="sr-only">메뉴</h2>
+      <ul
+        class="z-10 min-w-xs max-w-xs flex justify-between gap-4 bg-white items-stretch font-normal text-[0.6875rem] fixed mx-auto pt-0 pb-2 pr-2 bottom-0 left-0 right-0 border"
+      >
+        <li class="flex-1">
+          <a
+            href="./main.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[0px_-74px]"
+            ></span>
+            <span>홈</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href="../board/board.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-72px_-46px]"
+            ></span>
+            <span>게시판</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href="./exchange.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-106px_-91px]"
+            ></span>
+            <span>내 근처</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href="../qna/chatlists.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-51px_-73px]"
+            ></span>
+            <span>채팅</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href="../profile/profile.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-99px_-46px]"
+            ></span>
+            <span>나의 이름</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>
