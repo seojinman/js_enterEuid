@@ -1,84 +1,51 @@
 {
-  "products": [
+  "posts": [
     {
-      "id": "product-rksk",
-      "name": "[대구 반할만떡] 유부호만두",
-      "description": "유부로 속을 든든히 채운 군만두",
-      "price": 6900,
-      "saleRatio": 0.24,
-      "salePrice": 5244,
-      "image": {
-        "thumbnail": "ubuho/thumbnail.jpg",
-        "view": "ubuho/detail_view.jpg",
-        "banner": "ubuho/detail_banner.jpg",
-        "info": "ubuho/detail_info.jpg",
-        "alt": "유부호 만두"
-      },
-      "stock": 5
-    },
-    {
-      "id": "product-ekfk",
-      "name": "[풀무원] 탱탱쫄면 (4개입)",
-      "description": "튀기지 않아 부드럽고 매콤한",
-      "price": 4980,
-      "saleRatio": 0,
-      "salePrice": 0,
-      "image": {
-        "thumbnail": "tangtang/thumbnail.jpg",
-        "view": "tangtang/detail_view.jpg",
-        "banner": "tangtang/detail_banner.jpg",
-        "info": "tangtang/detail_info.jpg",
-        "alt": "풀무원 탱탱쫄면"
-      },
-      "stock": 10
-    },
-    {
-      "id": "product-akqk",
-      "name": "[홍대주꾸미] 주꾸미 볶음 300g (냉동)",
-      "description": "매콤달콤한 마력의 밥도둑",
-      "price": 7900,
-      "saleRatio": 0.13,
-      "salePrice": 6800,
-      "image": {
-        "thumbnail": "jukkumi/thumbnail.jpg",
-        "view": "jukkumi/detail_view.jpg",
-        "banner": "jukkumi/detail_banner.jpg",
-        "info": "jukkumi/detail_info.jpg",
-        "alt": "홍대 주꾸미"
-      },
-      "stock": 8
-    },
-    {
-      "id": "product-tkwk",
-      "name": "[강남면옥] 소갈비찜",
-      "description": "보는 맛과 먹는 맛 모두 푸짐",
-      "price": 29800,
-      "saleRatio": 0,
-      "salePrice": 0,
-      "image": {
-        "thumbnail": "kangnam/thumbnail.jpg",
-        "view": "kangnam/detail_view.jpg",
-        "banner": "kangnam/detail_banner.jpg",
-        "info": "kangnam/detail_info.jpg",
-        "alt": "강남면옥 소갈비찜"
-      },
-      "stock": 2
-    },
-    {
-      "id": "product-ckzk",
-      "name": "[Kalry's] 한돈 삼겹 베이컨",
-      "description": "무항생제 한돈 삼겹살의 고소한 풍미 그대로",
-      "price": 4500,
-      "saleRatio": 0.25,
-      "salePrice": 3375,
-      "image": {
-        "thumbnail": "bacon/thumbnail.jpg",
-        "view": "bacon/detail_view.jpg",
-        "banner": "bacon/detail_banner.jpg",
-        "info": "bacon/detail_info.jpg",
-        "alt": "칼리 한돈 삼겹 베이컨"
-      },
-      "stock": 13
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
     }
-  ]
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "euid": [
+    {
+      "id": "1",
+      "name": "About us",
+      "description": "'이듬' 블렌디드 러닝 교육 과정에 대해 소개합니다.",
+      "image": {
+        "thumbnail": "http://localhost:5500/assets/images/main/euid1.png",
+        "alt": "이듬 블렌디드 러닝 교육 소개"
+      },
+      "link": "https://euid.dev/#/about"
+    },
+    {
+      "id": "2",
+      "name": "Brand Story",
+      "description": "'이듬'은 우리 말로 '다음'을 의미합니다. 다음을 기약하며 나아가는 능동적이고 긍정적인 의미를 브랜드에 담고자 '듬'단어를 뉘어 UID(User Interface Development)로 풀어내고, 교육(Education)을 포함한 다양한 의미를 형상화한 영문 E와 조합하여 브랜드 로고를 제작하였습니다.",
+      "image": {
+        "thumbnail": "http://localhost:5500/assets/images/main/euid2.png",
+        "alt": "이듬 브랜드 이야기"
+      },
+      "link": "https://euid.dev/#/brand-story"
+    },
+    {
+      "id": "3",
+      "name": "Learning Guide",
+      "description": "UI Structure & Design: 웹기획자, 디자이너 또는 웹개발을 시작하려는 이들에게 멋진 웹 세상을 안내합니다, React Framework: React와 같은 프레임워크를 학습하려는 이들에게 모던 웹 개발 패러다임 세상을 안내합니다.",
+      "image": {
+        "thumbnail": "http://localhost:5500/assets/images/main/euid3.png",
+        "alt": "이듬 학습 안내"
+      },
+      "link": "https://euid.dev/#/learning-guide"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

@@ -44,3 +44,11 @@
     height: 100%;
   }
 }
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #719cf7;
+}
