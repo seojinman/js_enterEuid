@@ -3,7 +3,7 @@
   "plugins": ["prettier"], //prettier 플러그인을 사용한다.
   "rules": {
     "prettier/prettier": [
-      "off",
+      "warn",
       {
         "useTabs": false,
         "endOfLine": "auto",

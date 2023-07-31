@@ -76,8 +76,4 @@ module.exports = {
   plugins: [
 
   ],
-<<<<<<< HEAD
-};
-=======
-};
->>>>>>> develop
+}
