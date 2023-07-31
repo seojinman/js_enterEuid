@@ -1,0 +1,9 @@
+dsds {
+  @apply font-semibold;
+  @apply text-[1.1625rem] font-semibold;
+  @apply align-middle;
+  @apply text-center;
+  @apply text-[0.65625rem] px-3 py-4 border-y-[0.3px] border-y-[#919191] border-solid;
+  @apply text-sm;
+  @apply translate-x-[50%,50%];
+}
