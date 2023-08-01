@@ -47,5 +47,153 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+    
+  },
+  
+  
+  "chatlist": [
+    {
+      "id": 1,
+      "user": {
+        "name": "이드미",
+        "place": "망원동",
+        "createdAt": "3일 전"
+      },
+      "chat": "알겠습니다!",
+      "image": {
+        "profile": "http://localhost:5500/assets/images/main/qna/게시판.png",
+        "alt": "본인의 프로필 사진",
+        "attachment": "http://localhost:5500/assets/images/main/qna/게시글 첨부.png",
+        "alt": "대화중 받은 첨부 파일"
+      }
+    },
+    {
+      "id": 2,
+      "user": {
+        "name": "멋사와 함께",
+        "place": "성산제2동",
+        "createdAt": "3일 전"
+      },
+      "chat": "디버깅은 해보셨어용?",
+      "image": {
+        "profile": "http://localhost:5500/assets/images/main/qna/게시판.png",
+        "alt": "본인의 프로필 사진"
+      }
+    },
+    {
+      "id": 3,
+      "user": {
+        "name": "4기네이버",
+        "place": "연남동",
+        "createdAt": "3일 전"
+      },
+      "chat": "알겠습니다!",
+      "image": {
+        "profile": "http://localhost:5500/assets/images/main/qna/게시판.png",
+        "alt": "본인의 프로필 사진",
+        "attachment": "http://localhost:5500/assets/images/main/qna/게시글 첨부.png",
+        "alt": "대화중 받은 첨부 파일"
+      }
+    },
+    {
+      "id": 4,
+      "user": {
+        "name": "크크오가즈아",
+        "place": "남가좌제1동",
+        "createdAt": "3일 전"
+      },
+      "chat": "넵! 알려주신대로 해볼게...",
+      "image": {
+        "profile": "http://localhost:5500/assets/images/main/qna/게시판.png",
+        "alt": "본인의 프로필 사진"
+      }
+    },
+    {
+      "id": 5,
+      "user": {
+        "name": "EUIDDDD",
+        "place": "연희동",
+        "createdAt": "3일 전"
+      },
+      "chat": "이 부분에서 auto layout할 때 ",
+      "image": {
+        "profile": "http://localhost:5500/assets/images/main/qna/게시판.png",
+        "alt": "본인의 프로필 사진"
+      }
+    },
+    {
+      "id": 6,
+      "user": {
+        "name": "피그마마보이",
+        "place": "상수동",
+        "createdAt": "3일 전"
+      },
+      "chat": "그러면 이 부분에서는 이렇게 진행하면 되나요?!",
+      "image": {
+        "profile": "http://localhost:5500/assets/images/main/qna/게시판.png",
+        "alt": "본인의 프로필 사진"
+      }
+    },
+    {
+      "id": 7,
+      "user": {
+        "name": "카페인조아",
+        "place": "연희동",
+        "createdAt": "3일 전"
+      },
+      "chat": "오늘 저녁에 연희근처에서 오프라인 미팅 할까요?",
+      "image": {
+        "profile": "http://localhost:5500/assets/images/main/qna/게시판.png",
+        "alt": "본인의 프로필 사진",
+        "attachment": "http://localhost:5500/assets/images/main/qna/게시글 첨부.png",
+        "alt": "대화중 받은 첨부 파일"
+      }
+    },
+    {
+      "id": 8,
+      "user": {
+        "name": "가보자고",
+        "place": "망원동",
+        "createdAt": "3일 전"
+      },
+      "chat": "aria-hidden여기서 하면 이렇게 ?",
+      "image": {
+        "profile": "http://localhost:5500/assets/images/main/qna/게시판.png",
+        "alt": "본인의 프로필 사진",
+        "attachment": "http://localhost:5500/assets/images/main/qna/게시글 첨부.png",
+        "alt": "대화중 받은 첨부 파일"
+      }
+    },
+    {
+      "id": 9,
+      "user": {
+        "name": "4기네이버",
+        "place": "연남동",
+        "createdAt": "3일 전"
+      },
+      "chat": "알겠습니다!",
+      "image": {
+        "profile": "http://localhost:5500/assets/images/main/qna/게시판.png",
+        "alt": "본인의 프로필 사진",
+        "attachment": "http://localhost:5500/assets/images/main/qna/게시글 첨부.png",
+        "alt": "대화중 받은 첨부 파일"
+      }
+    },
+    {
+      "id": 10,
+      "user": {
+        "name": "MACBOY",
+        "place": "망원동",
+        "createdAt": "3일 전"
+      },
+      "chat": "m1칩 air입니까? pro입니까?",
+      "image": {
+        "profile": "http://localhost:5500/assets/images/main/qna/게시판.png",
+        "alt": "본인의 프로필 사진",
+        "attachment": "http://localhost:5500/assets/images/main/qna/게시글 첨부.png",
+        "alt": "대화중 받은 첨부 파일"
+      }
+    }
+  ]
 }
+
